@@ -67,17 +67,7 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/article13-best-ipad-for-elderly"
-  to = "/article13-best-ipad-for-elderly.html"
-  status = 301
-  force = true
 
-[[redirects]]
-  from = "/article14-best-ipad-for-grandparents"
-  to = "/article14-best-ipad-for-grandparents.html"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/article15-ipad-basics-seniors"
@@ -85,11 +75,6 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/article16-best-ipad-70-year-old"
-  to = "/article16-best-ipad-70-year-old.html"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/article17-best-iphone-for-seniors"
