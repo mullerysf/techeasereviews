@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://techeasereviews.com/about.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About TechEase Reviews — Written by a Working Tech Support Pro in Venice, FL</title>
+<meta name="description" content="TechEase Reviews is written by Shawn, a working in-home tech support professional serving seniors in Venice, Florida. Every review comes from real-world experience — not a press kit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest: #1d3a2a; --sage: #4a7c5f; --mint: #7ec8a0;
+  --warm: #f5f0e8; --paper: #faf8f4; --gold: #c9873a;
+  --text: #1a2218; --muted: #7a8c7e; --border: #dde8e1;
+  --amber: #92400e;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--paper); color: var(--text); font-size: 16px; line-height: 1.7; }
+
+nav { background: var(--forest); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+.nav-logo { font-family: 'Lora', Georgia, serif; font-size: 22px; color: white; text-decoration: none; }
+.nav-logo span { color: var(--mint); }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--mint); }
+
+/* HERO */
+.hero {
+  background: linear-gradient(160deg, #0e1e14 0%, #1d3a2a 55%, #0e1e14 100%);
+  padding: 72px 32px 90px; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 40%, rgba(126,200,160,0.15) 0%, transparent 55%),
+              radial-gradient(ellipse at 15% 80%, rgba(201,135,58,0.08) 0%, transparent 45%);
+}
+.hero::after {
+  content: '👨‍💻'; position: absolute; right: 80px; top: 50%;
+  transform: translateY(-50%); font-size: 140px; opacity: 0.07;
+}
+.hero-inner { max-width: 720px; margin: 0 auto; position: relative; }
+.hero-tag { display: inline-block; background: rgba(126,200,160,0.15); border: 1px solid rgba(126,200,160,0.35); color: var(--mint); font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 22px; }
+.hero h1 { font-family: 'Lora', Georgia, serif; font-size: clamp(32px, 4.5vw, 52px); color: white; line-height: 1.2; margin-bottom: 18px; }
+.hero h1 em { font-style: italic; color: var(--mint); }
+.hero-desc { font-size: 17px; color: rgba(255,255,255,0.68); line-height: 1.8; max-width: 580px; }
+
+/* MAIN */
+.main { max-width: 860px; margin: 0 auto; padding: 60px 32px; display: grid; grid-template-columns: 1fr 280px; gap: 48px; align-items: start; }
+
+/* CONTENT */
+.content h2 { font-family: 'Lora', Georgia, serif; font-size: 26px; color: var(--forest); margin: 40px 0 14px; padding-top: 8px; }
+.content h2:first-child { margin-top: 0; }
+.content p { font-size: 15.5px; line-height: 1.85; color: #2e3e32; margin-bottom: 18px; }
+.content p strong { color: var(--forest); }
+
+/* AUTHOR CARD */
+.author-card {
+  background: white; border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden; margin-bottom: 32px;
+}
+.author-header {
+  background: linear-gradient(135deg, var(--forest), #2d5040);
+  padding: 32px 28px; text-align: center; position: relative; overflow: hidden;
+}
+.author-header::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(126,200,160,0.15) 0%, transparent 60%);
+}
+.author-avatar {
+  width: 80px; height: 80px;
+  background: var(--mint); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px; margin: 0 auto 14px;
+  position: relative; border: 3px solid rgba(255,255,255,0.2);
+}
+.author-name { font-family: 'Lora', Georgia, serif; font-size: 22px; color: white; margin-bottom: 4px; position: relative; }
+.author-title { font-size: 13px; color: rgba(255,255,255,0.65); position: relative; }
+
+.author-body { padding: 22px 24px; }
+.author-stat { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13.5px; color: #2e3e32; }
+.author-stat:last-child { border-bottom: none; }
+.stat-icon { font-size: 18px; flex-shrink: 0; }
+.stat-text strong { color: var(--forest); }
+
+/* VALUES */
+.values { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+.value-item { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; border-left: 4px solid var(--mint); display: flex; gap: 16px; align-items: flex-start; }
+.vi-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+.vi-title { font-weight: 700; font-size: 15px; color: var(--forest); margin-bottom: 4px; }
+.vi-desc { font-size: 14px; color: #3a4e3e; line-height: 1.65; }
+
+/* WHAT I COVER */
+.covers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+.cover-item { background: var(--warm); border-radius: 9px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; font-size: 14px; color: #2e3e32; font-weight: 500; }
+.cover-icon { font-size: 20px; flex-shrink: 0; }
+
+/* DISCLOSURE */
+.disclosure-section { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin: 32px 0; }
+.ds-title { font-family: 'Lora', Georgia, serif; font-size: 20px; color: var(--forest); margin-bottom: 14px; }
+.ds-text { font-size: 14.5px; line-height: 1.8; color: #2e3e32; }
+.ds-text strong { color: var(--forest); }
+
+/* SIMPLY CONNECTED */
+.sc-box {
+  background: linear-gradient(135deg, var(--forest), #2d5040);
+  border-radius: 14px; padding: 28px 32px; margin: 32px 0;
+}
+.sc-box h3 { font-family: 'Lora', Georgia, serif; font-size: 20px; color: white; margin-bottom: 10px; }
+.sc-box p { font-size: 14px; color: rgba(255,255,255,0.72); line-height: 1.75; margin-bottom: 16px; }
+.sc-details { display: flex; flex-direction: column; gap: 8px; }
+.sc-detail { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.85); }
+.sc-detail span:first-child { color: var(--mint); font-size: 16px; }
+
+/* SIDEBAR */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sidebar-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.sidebar-card h4 { font-family: 'Lora', Georgia, serif; font-size: 15px; color: var(--forest); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+
+.tip-box { background: #fffbf0; border: 1px solid #f0ddb0; border-left: 5px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 8px 0; }
+.tip-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin-bottom: 6px; }
+.tip-box p { font-size: 13px; color: #6a5020; line-height: 1.65; margin: 0; }
+
+.article-list { list-style: none; }
+.al-item { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.al-item:last-child { border-bottom: none; }
+.al-arrow { color: var(--sage); font-weight: 700; flex-shrink: 0; }
+.al-item a { text-decoration: none; color: var(--text); font-weight: 500; flex: 1; line-height: 1.4; transition: color 0.2s; }
+.al-item a:hover { color: var(--sage); }
+
+footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
+.footer-inner { max-width: 960px; margin: 0 auto; text-align: center; }
+.footer-brand { font-family: 'Lora', Georgia, serif; font-size: 20px; color: white; margin-bottom: 8px; }
+.footer-brand span { color: var(--mint); }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .main { grid-template-columns: 1fr; }
+  .covers-grid { grid-template-columns: 1fr; }
+  nav .nav-links { display: none; }
+}
+
+/* EXPERIENCE STATS */
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.stat-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; border-top: 3px solid var(--mint); }
+.stat-number { font-family: 'Lora', Georgia, serif; font-size: 36px; font-weight: 700; color: var(--forest); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+/* SERVICES I COVER */
+.service-list { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; }
+.service-item { display: flex; align-items: flex-start; gap: 14px; background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+.service-icon { font-size: 22px; flex-shrink: 0; }
+.service-title { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 3px; }
+.service-desc { font-size: 13px; color: #3a4e3e; line-height: 1.6; }
+
+/* FAQ */
+.about-faq { margin: 24px 0; }
+.about-qa { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+.about-q { background: var(--warm); padding: 14px 18px; font-weight: 700; font-size: 14px; color: var(--forest); display: flex; align-items: center; gap: 8px; }
+.about-q-icon { color: var(--sage); flex-shrink: 0; }
+.about-a { padding: 14px 18px; background: white; font-size: 14px; color: #2e3e32; line-height: 1.8; }
+
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Tech<span>Ease</span> Reviews</a>
+  <ul class="nav-links">
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#categories">Categories</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">About This Site</div>
+    <h1>Real advice from someone<br>who does this <em>every day.</em></h1>
+    <p class="hero-desc">TechEase Reviews isn't written by a content farm or a marketing department. It's written by a working tech support professional who helps seniors with technology in real homes every week — in the Venice, Florida area and beyond.</p>
+  </div>
+</section>
+
+<div class="main">
+
+  <div class="content">
+
+    <h2>Who Writes This Site</h2>
+    <p>My name is Shawn. I run <strong>Simply Connected</strong>, an in-home technology support service for seniors and seasonal residents in the Venice, Florida area — including communities like Stoneybrook and the surrounding neighborhoods that fill up every winter with snowbirds coming down from Ohio, Michigan, New York, and beyond.</p>
+
+    <p>Every week I sit at seniors' kitchen tables, set up their new iPads, fix their Wi-Fi, show them how to video call their grandchildren, and help them recover from tech scams. I've done this hundreds of times. I know which devices work well for older adults and which ones cause frustration. I know which features matter and which ones get in the way. I know which products earn rave reviews from my clients three months after I set them up — and which ones get shoved in a drawer.</p>
+
+    <p>That experience is what this site is built on.</p>
+
+    <h2>Why I Started TechEase Reviews</h2>
+    <p>When seniors and their families search online for tech advice, they mostly find two kinds of content: reviews written by tech enthusiasts who've never worked with older adults, and articles written by content agencies optimizing for clicks rather than accuracy.</p>
+
+    <p>Neither kind of review tells you what actually matters when you're buying a tablet for your 78-year-old mother who has never used one before. They don't mention that the text is too small by default, or that the charging cable is confusing, or that FaceTime won't work on a Fire tablet and that matters enormously if the rest of the family uses iPhones.</p>
+
+    <p><strong>I write the reviews I wish existed when my clients' families call me asking what to buy.</strong> Plain English, honest tradeoffs, and recommendations grounded in what actually works in real senior households — not in a tech reviewer's home office.</p>
+
+    <div class="values">
+      <div class="value-item">
+        <div class="vi-icon">🔍</div>
+        <div>
+          <div class="vi-title">Recommendations from real-world use</div>
+          <div class="vi-desc">Every product I recommend is one I've either set up personally for seniors or would confidently recommend to clients. I don't review products I haven't worked with in real homes.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="vi-icon">💬</div>
+        <div>
+          <div class="vi-title">Plain English — always</div>
+          <div class="vi-desc">No gigahertz, no benchmark scores, no jargon that means nothing to the person actually buying the device. I write the way I talk to clients: clearly, patiently, and without talking down to anyone.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="vi-icon">🤝</div>
+        <div>
+          <div class="vi-title">Honest about limitations</div>
+          <div class="vi-desc">If a product has a real drawback for seniors — short battery life, confusing setup, no FaceTime support — I say so. A recommendation that glosses over the problems isn't actually helpful.</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="vi-icon">📍</div>
+        <div>
+          <div class="vi-title">Written from a specific perspective</div>
+          <div class="vi-desc">I work primarily with seniors and seasonal residents in Southwest Florida. That context informs my recommendations — things like outdoor screen readability in bright sun, Wi-Fi reliability in large Florida homes, and the specific scams circulating in retirement communities.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>What This Site Covers</h2>
+
+    <div class="covers-grid">
+      <div class="cover-item"><span class="cover-icon">📱</span> Smartphones for seniors</div>
+      <div class="cover-item"><span class="cover-icon">💻</span> Tablets and iPads</div>
+      <div class="cover-item"><span class="cover-icon">🔊</span> Smart speakers and displays</div>
+      <div class="cover-item"><span class="cover-icon">📡</span> Wi-Fi routers and setup</div>
+      <div class="cover-item"><span class="cover-icon">⌚</span> Medical alert smartwatches</div>
+      <div class="cover-item"><span class="cover-icon">🛡️</span> Scam awareness and protection</div>
+      <div class="cover-item"><span class="cover-icon">📋</span> Setup guides and how-tos</div>
+      <div class="cover-item"><span class="cover-icon">🎁</span> Gift guides for seniors</div>
+    </div>
+
+    <h2>A Note on Affiliate Links</h2>
+    <div class="disclosure-section">
+      <div class="ds-title">Honest Disclosure</div>
+      <p class="ds-text">TechEase Reviews participates in the Amazon Associates Program. This means that when you click a product link on this site and make a purchase on Amazon, I may earn a small commission — at no extra cost to you.</p>
+      <p class="ds-text" style="margin-top:14px;">This commission is what keeps the site running and free to read. It does not influence which products I recommend. <strong>I recommended these products to clients before I ever had an affiliate link for them.</strong> If a product isn't good for seniors, I won't recommend it regardless of whether there's a commission attached.</p>
+      <p class="ds-text" style="margin-top:14px;">Every article on this site includes a disclosure at the top. I believe in being straightforward about how the site works.</p>
+    </div>
+
+    <div class="sc-box">
+      <h3>Simply Connected — In-Home Tech Support</h3>
+      <p>TechEase Reviews is the online home for the same expertise I provide in person through Simply Connected. If you're a senior or seasonal resident in the Venice, Florida area and need hands-on help with any of the topics covered on this site, I come to you.</p>
+      <div class="sc-details">
+        <div class="sc-detail"><span>📍</span><span>Serving Stoneybrook, Venice, and surrounding communities</span></div>
+        <div class="sc-detail"><span>🛠️</span><span>Device setup, Wi-Fi troubleshooting, scam recovery, and more</span></div>
+        <div class="sc-detail"><span>👴</span><span>Patient, plain-English help — no judgment, no rushing</span></div>
+        <div class="sc-detail"><span>❄️</span><span>Snowbird-friendly — available throughout the season</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h4>👨‍💻 About the Author</h4>
+      <div class="author-card" style="margin:0; border:none; border-radius:10px;">
+        <div class="author-header" style="padding:24px 20px;">
+          <div class="author-avatar">👨‍💻</div>
+          <div class="author-name">Shawn</div>
+          <div class="author-title">Tech Support Pro · Venice, FL</div>
+        </div>
+        <div class="author-body">
+          <div class="author-stat"><span class="stat-icon">📍</span><span>Venice, Florida</span></div>
+          <div class="author-stat"><span class="stat-icon">🛠️</span><span><strong>Simply Connected</strong> — in-home tech support</span></div>
+          <div class="author-stat"><span class="stat-icon">👴</span><span>Specializes in senior technology</span></div>
+          <div class="author-stat"><span class="stat-icon">❄️</span><span>Serves snowbird communities</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>📖 Start Reading</h4>
+      <ul class="article-list">
+        <li class="al-item"><span class="al-arrow">→</span><a href="index.html#article">Echo Show 8 Review</a></li>
+        <li class="al-item"><span class="al-arrow">→</span><a href="article2-best-ipad-for-seniors.html">Best iPad for Seniors</a></li>
+        <li class="al-item"><span class="al-arrow">→</span><a href="article4-stop-robocalls.html">How to Stop Robocalls</a></li>
+        <li class="al-item"><span class="al-arrow">→</span><a href="article7-tech-scams-seniors.html">6 Tech Scams Guide</a></li>
+        <li class="al-item"><span class="al-arrow">→</span><a href="article9-iphone-setup-senior-parent.html">iPhone Setup Guide</a></li>
+        <li class="al-item"><span class="al-arrow">→</span><a href="article10-best-tech-gifts-seniors.html">Best Tech Gifts</a></li>
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-label">💡 Local to Venice, FL?</div>
+      <p>Simply Connected provides in-home tech support throughout the Venice area. Same expertise as this site — in person, at your kitchen table.</p>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Tech<span>Ease</span> Reviews</div>
+    <p style="font-size:13px; color:rgba(255,255,255,0.45); margin-top:6px;">Honest technology reviews for seniors · Venice, Florida</p>
+    <p class="footer-copy">© 2025 TechEase Reviews · Written by Shawn · Simply Connected · Venice, FL</p>
+  </div>
+</footer>
+
+</body>
+</html>

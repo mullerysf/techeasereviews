@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://techeasereviews.com/article19-snowbird-tech-setup-arrival.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snowbird Tech Setup: What to Do the Day You Arrive in Florida — TechEase Reviews</title>
+<meta name="description" content="A step-by-step tech setup guide for snowbirds arriving in Florida. Get your Wi-Fi, phone, streaming, and accounts working the first day — from someone who helps seniors do this every season.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0d2d4a;
+  --navy-deep: #071828;
+  --aqua: #2abfbf;
+  --aqua-light: #e6f7f7;
+  --aqua-mid: #b8ecec;
+  --gold: #c9873a;
+  --gold-light: #fdf3e8;
+  --warm: #faf8f4;
+  --paper: #ffffff;
+  --text: #1a2030;
+  --muted: #6b7a8d;
+  --border: #e2e8f0;
+  --border-strong: #c8d5e0;
+  --step-bg: #f0f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #0a2038;
+    --navy-deep: #050f18;
+    --aqua: #2abfbf;
+    --aqua-light: #0d2e2e;
+    --aqua-mid: #1a4545;
+    --gold: #d4944a;
+    --gold-light: #2a1a08;
+    --warm: #111827;
+    --paper: #1a2332;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: #2a3a4a;
+    --border-strong: #3a4a5a;
+    --step-bg: #0d2020;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --navy: #0a2038;
+  --navy-deep: #050f18;
+  --aqua: #2abfbf;
+  --aqua-light: #0d2e2e;
+  --aqua-mid: #1a4545;
+  --gold: #d4944a;
+  --gold-light: #2a1a08;
+  --warm: #111827;
+  --paper: #1a2332;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #2a3a4a;
+  --border-strong: #3a4a5a;
+  --step-bg: #0d2020;
+  color-scheme: dark;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--warm);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* NAV */
+nav {
+  background: var(--navy-deep);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--aqua); }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--aqua); }
+
+/* HERO — warm Florida sunrise feel: deep navy to horizon blue */
+.article-hero {
+  background: linear-gradient(155deg, #071828 0%, #0d3a5a 50%, #1a5070 100%);
+  padding: 64px 32px 80px;
+  position: relative;
+  overflow: hidden;
+}
+.article-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(201,135,58,0.18) 0%, transparent 45%),
+    radial-gradient(ellipse at 10% 80%, rgba(42,191,191,0.12) 0%, transparent 50%);
+}
+.article-hero::after {
+  content: '☀️';
+  position: absolute; right: 60px; top: 40px;
+  font-size: 160px;
+  opacity: 0.07;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.hero-inner { max-width: 780px; margin: 0 auto; position: relative; }
+
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: rgba(255,255,255,0.4);
+  margin-bottom: 22px;
+}
+.breadcrumb a { color: var(--aqua); text-decoration: none; opacity: 0.8; }
+.breadcrumb a:hover { opacity: 1; }
+.breadcrumb span { color: rgba(255,255,255,0.2); }
+
+.article-cat {
+  display: inline-block;
+  background: rgba(201,135,58,0.2);
+  border: 1px solid rgba(201,135,58,0.4);
+  color: #e8ab60;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.article-hero h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 50px);
+  color: white;
+  line-height: 1.18;
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+.article-hero h1 em { font-style: italic; color: var(--aqua); }
+.article-hero h1 .gold { color: #e8ab60; }
+
+.article-byline {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 13px; color: rgba(255,255,255,0.5);
+  flex-wrap: wrap; margin-bottom: 24px;
+}
+.byline-dot { color: rgba(255,255,255,0.2); }
+
+.hero-intro {
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  max-width: 680px;
+  border-left: 3px solid var(--aqua);
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+/* LAYOUT */
+.page-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  display: grid;
+  grid-template-columns: 1fr 296px;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .page-layout { grid-template-columns: 1fr; padding: 32px 16px; }
+  .sidebar { order: -1; }
+}
+
+/* ARTICLE CONTENT */
+.article-content {
+  background: var(--paper);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.content-body { padding: 40px 44px; }
+@media (max-width: 600px) { .content-body { padding: 28px 20px; } }
+
+.content-body p { margin-bottom: 20px; }
+.content-body p:last-child { margin-bottom: 0; }
+
+/* Section headings */
+.content-body h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 24px;
+  color: var(--navy);
+  line-height: 1.3;
+  margin: 40px 0 16px;
+  padding-top: 8px;
+  text-wrap: balance;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .content-body h2 { color: var(--aqua-mid); }
+}
+:root[data-theme="dark"] .content-body h2 { color: var(--aqua-mid); }
+
+.content-body h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 28px 0 10px;
+}
+
+/* Step cards */
+.steps-list { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+
+.step-card {
+  display: flex;
+  gap: 16px;
+  background: var(--step-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 36px; height: 36px;
+  background: var(--aqua);
+  color: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 700;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.step-content { flex: 1; }
+.step-content strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.step-content p { font-size: 15px; color: var(--muted); margin: 0; line-height: 1.6; }
+.step-content a { color: var(--aqua); text-decoration: none; }
+.step-content a:hover { text-decoration: underline; }
+
+/* Section divider */
+.section-divider {
+  display: flex; align-items: center; gap: 14px;
+  margin: 40px 0 28px;
+}
+.section-divider-line { flex: 1; height: 1px; background: var(--border); }
+.section-divider-icon { font-size: 20px; }
+
+/* Info callout */
+.info-box {
+  background: var(--aqua-light);
+  border: 1px solid var(--aqua-mid);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 28px 0;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.65;
+}
+.info-box strong { color: var(--navy); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .info-box strong { color: var(--aqua); }
+}
+:root[data-theme="dark"] .info-box strong { color: var(--aqua); }
+
+.info-box-header {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 600; font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .info-box-header { color: var(--aqua); }
+}
+:root[data-theme="dark"] .info-box-header { color: var(--aqua); }
+
+/* Warning box */
+.warn-box {
+  background: var(--gold-light);
+  border: 1px solid rgba(201,135,58,0.35);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 28px 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.warn-box-header {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 600; font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--gold);
+}
+
+/* Checklist promo */
+.checklist-promo {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  border-radius: 16px;
+  padding: 32px;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.checklist-promo::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 20% 30%, rgba(42,191,191,0.15) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 70%, rgba(201,135,58,0.1) 0%, transparent 55%);
+  pointer-events: none;
+}
+.checklist-promo-icon { font-size: 40px; margin-bottom: 12px; position: relative; }
+.checklist-promo h3 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22px; color: white;
+  margin-bottom: 10px; position: relative;
+}
+.checklist-promo p {
+  font-size: 14px; color: rgba(255,255,255,0.65);
+  max-width: 380px; margin: 0 auto 20px;
+  position: relative;
+}
+.checklist-promo-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  position: relative;
+  transition: opacity 0.2s;
+}
+.checklist-promo-btn:hover { opacity: 0.9; }
+.checklist-promo-price {
+  display: block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Quick tip */
+.quick-tip {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 14px 18px;
+  background: var(--warm);
+  border-radius: 8px;
+  margin: 16px 0;
+  font-size: 15px;
+  border: 1px solid var(--border);
+}
+.quick-tip-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+/* Internal link */
+.related-link {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--aqua);
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+  transition: border-color 0.2s;
+}
+.related-link:hover { border-left-color: var(--gold); }
+.related-link-arrow { color: var(--aqua); font-size: 16px; margin-left: auto; }
+
+/* Q&A */
+.qa-section { margin: 40px 0 0; }
+.qa-section h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 24px;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .qa-section h2 { color: var(--aqua-mid); }
+}
+:root[data-theme="dark"] .qa-section h2 { color: var(--aqua-mid); }
+
+.qa-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: var(--paper);
+}
+.qa-question {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 18px 20px;
+  font-weight: 600; font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.qa-question::-webkit-details-marker { display: none; }
+.qa-question::after {
+  content: '+';
+  color: var(--aqua);
+  font-size: 22px;
+  font-weight: 300;
+  flex-shrink: 0;
+  line-height: 1;
+}
+details[open] .qa-question::after { content: '−'; }
+.qa-answer {
+  padding: 0 20px 18px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.qa-answer a { color: var(--aqua); }
+
+/* SIDEBAR */
+.sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+.sidebar-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.sidebar-card-header {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 17px;
+  color: var(--navy);
+  display: flex; align-items: center; gap: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sidebar-card-header { color: var(--aqua); }
+}
+:root[data-theme="dark"] .sidebar-card-header { color: var(--aqua); }
+
+.sidebar-card-body { padding: 16px 20px; }
+
+/* Checklist CTA sidebar card */
+.checklist-card {
+  background: linear-gradient(150deg, var(--navy-deep) 0%, #0d3a5a 100%);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.checklist-card::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 20%, rgba(42,191,191,0.2) 0%, transparent 55%);
+  pointer-events: none;
+}
+.checklist-card-inner { padding: 28px 24px; position: relative; text-align: center; }
+.checklist-card-badge {
+  display: inline-block;
+  background: rgba(42,191,191,0.15);
+  border: 1px solid rgba(42,191,191,0.35);
+  color: var(--aqua);
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 12px;
+  margin-bottom: 16px;
+}
+.checklist-card-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px; color: white;
+  line-height: 1.3; margin-bottom: 12px;
+}
+.checklist-card-title em { font-style: italic; color: var(--aqua); }
+.checklist-card-subtitle {
+  font-size: 13px; color: rgba(255,255,255,0.55);
+  margin-bottom: 18px; line-height: 1.55;
+}
+.checklist-card-features { text-align: left; margin-bottom: 20px; }
+.checklist-feature {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: rgba(255,255,255,0.75);
+  padding: 5px 0;
+}
+.feature-check {
+  width: 20px; height: 20px;
+  background: rgba(42,191,191,0.2);
+  border: 1px solid rgba(42,191,191,0.4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--aqua); font-size: 11px;
+  flex-shrink: 0;
+}
+.checklist-card-btn {
+  display: block;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  font-weight: 700; font-size: 15px;
+  padding: 13px 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(201,135,58,0.4);
+  transition: opacity 0.2s;
+}
+.checklist-card-btn:hover { opacity: 0.9; }
+.checklist-price-note {
+  font-size: 12px; color: rgba(255,255,255,0.35);
+  margin-top: 10px;
+}
+
+/* Sidebar contact card */
+.contact-card-inner { padding: 4px 0; }
+.contact-item {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.contact-label { font-weight: 600; font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+.contact-value { color: var(--text); }
+.contact-value a { color: var(--aqua); text-decoration: none; }
+
+/* Related articles sidebar */
+.related-list { display: flex; flex-direction: column; gap: 12px; padding: 4px 0; }
+.related-item {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+.related-item:hover { color: var(--aqua); }
+.related-item-icon { font-size: 18px; flex-shrink: 0; }
+
+/* FOOTER */
+footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 40px 32px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+footer a { color: var(--aqua); text-decoration: none; }
+.footer-logo {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px; color: white;
+  margin-bottom: 8px;
+}
+.footer-logo span { color: var(--aqua); }
+
+/* Article intro strip */
+.intro-strip {
+  background: var(--aqua-light);
+  border-bottom: 1px solid var(--aqua-mid);
+  padding: 16px 44px;
+  font-size: 14px;
+  color: var(--text);
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.intro-strip-item { display: flex; align-items: center; gap: 6px; }
+.intro-strip-item span { font-weight: 600; }
+@media (max-width: 600px) { .intro-strip { padding: 14px 20px; gap: 12px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Tech<span>Ease</span> Reviews</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/contact.html">Get Help</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <span>Snowbird Setup</span>
+    </div>
+    <div class="article-cat">☀️ Snowbird Season</div>
+    <h1>Your <em>First Day</em> in Florida:<br>The <span class="gold">Snowbird Tech Setup</span> Guide</h1>
+    <div class="article-byline">
+      <span>By Shawn</span>
+      <span class="byline-dot">·</span>
+      <span>Simply Connected · Venice, FL</span>
+      <span class="byline-dot">·</span>
+      <span>Updated October 2026</span>
+    </div>
+    <p class="hero-intro">You just drove 1,200 miles, the condo smells like it's been closed since April, and you can't get your Wi-Fi to work. Here's what to tackle first — in the right order — so everything is running by tonight.</p>
+  </div>
+</div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <article class="article-content">
+
+      <div class="intro-strip">
+        <div class="intro-strip-item">📍 <span>For:</span> Florida snowbirds returning for the season</div>
+        <div class="intro-strip-item">⏱ <span>Time:</span> 60–90 minutes to get fully set up</div>
+        <div class="intro-strip-item">🛠 <span>Covers:</span> Wi-Fi · Phone · Streaming · Security</div>
+      </div>
+
+      <div class="content-body">
+
+        <p>Every October and November, I get the same calls from snowbirds who just arrived in Venice, Sarasota, and the surrounding areas. The Wi-Fi password is wrong. Netflix wants them to verify their location. The phone is still on the northern carrier. The TV remote doesn't work. The laptop wants 47 updates before it'll do anything.</p>
+
+        <p>None of this is complicated — but it hits you all at once when you're already tired from the drive. After helping hundreds of snowbirds get settled, I put together this guide in the order that actually works. Start at the top and work your way down.</p>
+
+        <!-- STEP 1: WIFI -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">📡</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Step 1: Get the Wi-Fi Working First</h2>
+
+        <p>Do this before anything else. Every other step is easier — or only possible — once you have a reliable internet connection.</p>
+
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Locate your router and power it on</strong>
+              <p>Find the router — usually in a closet, entertainment center, or utility room. Make sure it's plugged in and the lights are on. Wait a full 2 minutes before testing anything. Routers need time to connect to the internet after powering up.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Find your Wi-Fi name and password</strong>
+              <p>Check the sticker on the bottom or back of your router. Your network name (SSID) and password are usually printed right there. If you changed them and can't remember, do a factory reset: hold the reset button for 10 seconds, then use the default password on the sticker.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Connect your phone first, test the speed</strong>
+              <p>Go to Settings → Wi-Fi on your phone and connect. Then open a browser and go to <a href="https://fast.com" target="_blank" rel="noopener">fast.com</a> — it should show at least 25 Mbps for normal use. If it shows under 10 Mbps or won't load at all, call your internet provider before wasting time setting up other devices.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <strong>Connect your other devices one at a time</strong>
+              <p>TV, tablet, laptop — connect them to Wi-Fi now so they can start downloading updates in the background while you continue setup. Don't wait for updates to finish before moving on.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-box-header">💡 If the Wi-Fi signal is weak in your bedroom</div>
+          A router in one corner of a condo often struggles to reach the far bedroom. A simple fix: a Wi-Fi extender ($30–40 at any hardware store) plugged halfway between the router and the weak area. Or consider a mesh router system — I cover the best options in my <a href="/article6-best-wifi-routers.html">Wi-Fi routers for seniors guide</a>.
+        </div>
+
+        <a href="/article6-best-wifi-routers.html" class="related-link">
+          📡 Best Wi-Fi Routers for Seniors — Easy Setup, Reliable Signal
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <!-- STEP 2: PHONE -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">📱</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Step 2: Set Up Your Smartphone for Florida</h2>
+
+        <p>Your phone works differently in Florida than it did up north — and a few quick adjustments save you from slow data, roaming charges, and missed calls.</p>
+
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Turn on Wi-Fi Calling</strong>
+              <p>If your Florida condo gets weak cell signal, Wi-Fi Calling lets your phone make and receive calls over your home internet instead of the cell tower. On iPhone: Settings → Phone → Wi-Fi Calling → turn it on. On Android: Settings → Connections → Wi-Fi Calling. This is a game-changer in buildings with thick concrete walls.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Check that your plan covers Florida</strong>
+              <p>Most major carriers (Verizon, AT&T, T-Mobile) include Florida in their standard plans. But if you're on a regional carrier, check your coverage map — you may be roaming. Call your carrier if your data feels unusually slow.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Update your apps and operating system</strong>
+              <p>Go to your phone's Settings and check for a software update. Then open the App Store (iPhone) or Play Store (Android) and update all your apps. Do this while connected to Wi-Fi — it can use several gigabytes of data.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <strong>Make text larger if needed</strong>
+              <p>On iPhone: Settings → Display & Brightness → Text Size, then drag the slider right. On Android: Settings → Accessibility → Font Size. Bigger text reduces eye strain and makes everything easier to use. There's no wrong answer — make it as big as you need.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/article3-phones-biggest-text.html" class="related-link">
+          📱 Best Phones for Seniors with the Biggest Text and Clearest Display
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <a href="/article11-wifi-calling-seniors.html" class="related-link">
+          📞 Wi-Fi Calling for Seniors: How It Works and Why You Need It
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <!-- STEP 3: STREAMING -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">📺</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Step 3: Get Your Streaming Services Working</h2>
+
+        <p>This is where most snowbirds run into trouble. Streaming services like Netflix and Disney+ now use location verification — meaning they want to confirm you're actually in the United States when you're here for the season. Here's how to handle each one.</p>
+
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Netflix — set your location</strong>
+              <p>Netflix now enforces household location. Open Netflix on your TV and go to Account Settings on the Netflix website. Look for "Manage Your Household" and follow the steps to add your Florida location. You'll get a verification email or text. Complete it within 15 minutes.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Amazon Prime Video — just sign in</strong>
+              <p>Prime Video is the easiest — just sign into your Amazon account on the TV or streaming device. No location verification needed. If you're already signed in but it's not working, sign out and sign back in.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Hulu and Disney+ — password reset if needed</strong>
+              <p>If you haven't logged into Hulu or Disney+ since last season, your session may have expired. Go to the app's sign-in screen and use "Forgot Password" to reset — it emails you a link. Use your email on your phone to click the link, then set a new password and use it on the TV.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <strong>Cable or antenna — check your local channels</strong>
+              <p>If you use a cable box, turn it on and let it download its program guide — this can take 10–15 minutes. If you use an antenna for local channels, do a channel scan: on your TV remote, go to Settings → Channels → Scan for Channels. You'll pick up the local Venice/Sarasota stations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="warn-box">
+          <div class="warn-box-header">⚠️ Write your passwords down before you lose them</div>
+          This is the #1 call I get from snowbirds. Your Netflix, Hulu, Amazon, and email passwords were probably saved on your home computer up north — but they're not saved on your Florida devices. Before you leave home next spring, write them on a piece of paper and keep it in your wallet or a secure place at the condo. A simple password notebook works great.
+        </div>
+
+        <!-- STEP 4: ACCOUNTS -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">🔐</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Step 4: Get Your Email and Important Accounts Working</h2>
+
+        <p>Your bank, email, and health accounts may send security alerts when you sign in from a new location. That's normal and a good sign — it means they're protecting you. Here's how to handle it smoothly.</p>
+
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Sign into your email first</strong>
+              <p>Open your email app — Gmail, Outlook, or whatever you use — and make sure it's working. Many verification codes for other accounts come to your email, so this needs to work before you try anything else.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Check your bank and financial accounts</strong>
+              <p>Log into your bank's app or website. If they ask for a verification code, check your email or phone for a text message. Enter the code when prompted. This is normal and safe — it's just confirming it's really you signing in from a new location.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Verify your Medicare and health insurance apps</strong>
+              <p>Open your Medicare app, any supplemental insurance apps, and your pharmacy app (like CVS or Walgreens). Make sure they're signed in. If you need prescriptions filled at a Florida pharmacy, your app will show your coverage — much easier than carrying all your insurance cards.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 5: SCAMS -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">🛡️</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Step 5: Know the Scams That Target Snowbirds</h2>
+
+        <p>Florida has some of the highest rates of senior scams in the country — and the first few weeks of snowbird season are when scammers are most active, because they know people are getting reconnected and may be confused about their accounts.</p>
+
+        <div class="warn-box">
+          <div class="warn-box-header">🚨 Four scams to watch for right now</div>
+          <strong>1. The "verify your location" scam.</strong> You get a call or text saying your Netflix or Amazon account has been flagged and you need to call a number to verify. Ignore it — go directly to the app or website instead.<br><br>
+          <strong>2. The tech support pop-up.</strong> A website shows a scary warning saying your computer has a virus and to call a toll-free number. Close the browser tab. Do not call the number.<br><br>
+          <strong>3. The utility company threat.</strong> Someone calls saying your FPL (Florida Power & Light) will be shut off unless you pay immediately with a gift card. Real utilities never ask for gift cards.<br><br>
+          <strong>4. The contractor at the door.</strong> Someone comes to your door saying they noticed damage to your roof or driveway and can fix it cheap today. Get at least three quotes from licensed contractors first.
+        </div>
+
+        <a href="/article7-tech-scams-seniors.html" class="related-link">
+          🛡️ Tech Scams Targeting Seniors: The Complete Guide
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <!-- CHECKLIST PROMO -->
+        <div class="checklist-promo">
+          <div class="checklist-promo-icon">📋</div>
+          <h3>Want a Printable Checklist for This?</h3>
+          <p>The Snowbird's Tech Setup Checklist covers all of this in a clean, print-it-and-use-it format — plus a fillable page for all your passwords and account info.</p>
+          <a href="https://shawnmuller.gumroad.com/l/snowbird-tech-checklist" target="_blank" rel="noopener" class="checklist-promo-btn">Get the Checklist — $12</a>
+          <span class="checklist-price-note">Instant PDF download · Print it · Use it every season</span>
+        </div>
+
+        <!-- BONUS: TABLET TIPS -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-icon">💡</div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <h2>Bonus: If You Brought a Tablet or Laptop</h2>
+
+        <p>Tablets and laptops need a few extra minutes of attention when you arrive for the season.</p>
+
+        <div class="steps-list">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Connect to Wi-Fi and let updates run</strong>
+              <p>Connect your tablet or laptop to your Florida Wi-Fi first thing and leave it plugged in while you do other setup tasks. Updates can take 30–60 minutes on a device that's been off since last spring.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Sign back into apps that signed you out</strong>
+              <p>After months of inactivity, apps like your email, banking apps, and streaming services may have logged you out for security. Plan 15 minutes to re-enter your credentials on each one.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Check your storage space</strong>
+              <p>On iPad: Settings → General → iPad Storage. On Android tablet: Settings → About Device → Storage. If you're below 10% free space, delete photos you've already backed up or apps you don't use. A full device runs slow and can't receive updates.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/article15-ipad-basics-seniors.html" class="related-link">
+          📱 iPad Basics for Seniors: The Complete Beginner's Guide
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <a href="/article2-best-ipad-for-seniors.html" class="related-link">
+          🏆 Best iPads for Seniors in 2026 — Honest Picks from a Pro
+          <span class="related-link-arrow">→</span>
+        </a>
+
+        <!-- NEED HELP -->
+        <div class="section-divider">
+          <div class="section-divider-line"></div>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-box-header">🤝 Need a hand getting set up?</div>
+          I make house calls throughout Venice, Nokomis, Osprey, and North Port. Whether it's your Wi-Fi, your iPad, or getting Netflix back on the TV — I can usually get everything working in one visit. <a href="/contact.html">See how Simply Connected works →</a>
+        </div>
+
+        <!-- Q&A -->
+        <div class="qa-section">
+          <h2>Common Questions from Arriving Snowbirds</h2>
+
+          <details class="qa-item">
+            <summary class="qa-question">My Wi-Fi was working fine last spring. Why isn't it connecting now?</summary>
+            <div class="qa-answer">
+              <p>The most common reason is that your router needed to reconnect to the internet after sitting unused. Give it 2–3 full minutes after powering on. If it still won't connect, try unplugging it for 30 seconds and plugging it back in. If the internet light on your router stays red or off after 5 minutes, call your internet provider — your service may have been disconnected for non-use or your account may need to be reactivated.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">Netflix says my account is being used in a different location. What do I do?</summary>
+            <div class="qa-answer">
+              <p>This is Netflix's household verification feature — it confirms that you're actually living where you say you are. Sign into Netflix on a web browser (not the app) and look for "Manage Your Household" in your account settings. Follow the prompts to add your Florida location. You'll receive a verification link to your email address. Click it within 15 minutes and you should be good to go.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">My phone signal is really weak inside my condo. Can I fix this?</summary>
+            <div class="qa-answer">
+              <p>Yes — this is very common in concrete buildings. The fix is Wi-Fi Calling: your phone routes calls and texts over your home internet instead of the cell tower, so you get a perfect connection inside even when the cell signal is weak. On iPhone: Settings → Phone → Wi-Fi Calling → switch it on. On Android: Settings → Connections → Wi-Fi Calling. Your carrier may need to have Wi-Fi Calling enabled on your account — call them if the option doesn't appear.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">I forgot the password for my email / Netflix / bank. What now?</summary>
+            <div class="qa-answer">
+              <p>Use the "Forgot Password" link on the sign-in page. The reset instructions will be sent to your email address — which is why it's important to get email working first. If you've also forgotten your email password, you'll need to reset that first using your phone number for verification. Going forward, keep a written record of your passwords somewhere safe — a dedicated password notebook kept in a drawer at your condo works well.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">How long does it take to get everything set up when I arrive?</summary>
+            <div class="qa-answer">
+              <p>With this guide, plan on 60–90 minutes if everything goes smoothly. The bulk of that is waiting for updates to download. Wi-Fi setup takes about 10 minutes, phone setup another 10, streaming services 15–20 minutes (Netflix verification is the most time-consuming), and email/accounts another 10–15 minutes. If you run into a snag — forgotten password, router not connecting, streaming service giving errors — each of those can add 20–30 minutes.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">Is it safe to do online banking from my Florida condo's Wi-Fi?</summary>
+            <div class="qa-answer">
+              <p>Yes — your home Wi-Fi network is private and secure. What you want to avoid is doing banking on public Wi-Fi (a coffee shop, the condo pool area's free Wi-Fi, a library). On your own home network with your own password, banking is safe. Using your bank's app rather than a browser adds an extra layer of security as well.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">Do I need a separate phone plan for Florida, or does mine work everywhere?</summary>
+            <div class="qa-answer">
+              <p>The three major carriers — Verizon, AT&T, and T-Mobile — all include nationwide coverage in their standard plans, so Florida is covered at no extra charge. If you're on a smaller regional carrier, check your plan details or call them to confirm. The Venice/Sarasota area has excellent coverage from all three major carriers.</p>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">I got an email saying my Amazon/Netflix account was hacked right after I arrived. Is this real?</summary>
+            <div class="qa-answer">
+              <p>Be very cautious. Scammers time these fake security emails to coincide with snowbird season, knowing people are logging into accounts from new locations. Before clicking anything in the email, go directly to the service's website by typing it into your browser (amazon.com, netflix.com). Check your account there. If there's a real problem, you'll see it — if everything looks fine, the email was a scam. Never call a phone number from a security email.</p>
+            </div>
+          </details>
+
+        </div>
+
+      </div><!-- end content-body -->
+    </article>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- Checklist CTA -->
+    <div class="sidebar-card checklist-card">
+      <div class="checklist-card-inner">
+        <div class="checklist-card-badge">☀️ Instant Download</div>
+        <div class="checklist-card-title">The <em>Snowbird's</em><br>Tech Setup Checklist</div>
+        <div class="checklist-card-subtitle">A printable PDF that walks you through setup step by step — with a page for all your passwords and account info.</div>
+        <div class="checklist-card-features">
+          <div class="checklist-feature"><div class="feature-check">✓</div> Wi-Fi setup — step by step</div>
+          <div class="checklist-feature"><div class="feature-check">✓</div> iPhone & Android checklists</div>
+          <div class="checklist-feature"><div class="feature-check">✓</div> Streaming password reset guide</div>
+          <div class="checklist-feature"><div class="feature-check">✓</div> Scam awareness guide</div>
+          <div class="checklist-feature"><div class="feature-check">✓</div> Fillable quick reference page</div>
+        </div>
+        <a href="https://shawnmuller.gumroad.com/l/snowbird-tech-checklist" target="_blank" rel="noopener" class="checklist-card-btn">Get It for $12</a>
+        <div class="checklist-price-note">Instant PDF · Print it · Use it every season</div>
+      </div>
+    </div>
+
+    <!-- Simply Connected -->
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">🤝 Need In-Person Help?</div>
+      <div class="sidebar-card-body">
+        <div class="contact-card-inner">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Service Area</div>
+              <div class="contact-value">Venice, Nokomis, Osprey, North Port</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🏠</div>
+            <div>
+              <div class="contact-label">House Calls</div>
+              <div class="contact-value">In-home tech setup for seniors — one visit, everything working</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-label">Get Started</div>
+              <div class="contact-value"><a href="/contact.html">Contact Simply Connected →</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Articles -->
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">📚 More Helpful Guides</div>
+          <div class="sidebar-card">
+      <h4>🗂 Browse by Topic</h4>
+      <ul class="toc-list">
+        <li><a href="article2-best-ipad-for-seniors.html"><div class="toc-num">📱</div> Best iPad for Seniors</a></li>
+        <li><a href="article3-phones-biggest-text.html"><div class="toc-num">📞</div> Best Phones for Seniors</a></li>
+        <li><a href="article17-best-iphone-for-seniors.html"><div class="toc-num">🍎</div> Best iPhone for Seniors</a></li>
+        <li><a href="article6-best-wifi-routers.html"><div class="toc-num">📶</div> Best Wi-Fi Routers</a></li>
+        <li><a href="article8-medical-alert-watches.html"><div class="toc-num">⌚</div> Medical Alert Watches</a></li>
+        <li><a href="article7-tech-scams-seniors.html"><div class="toc-num">🛡️</div> How to Avoid Tech Scams</a></li>
+        <li><a href="article10-best-tech-gifts-seniors.html"><div class="toc-num">🎁</div> Best Tech Gifts for Seniors</a></li>
+        <li><a href="article19-snowbird-tech-setup-arrival.html"><div class="toc-num">🌴</div> Snowbird Tech Setup Guide</a></li>
+        <li><a href="article20-best-laptop-for-seniors.html"><div class="toc-num">💻</div> Best Laptops for Seniors</a></li>
+      </ul>
+    </div>
+  
+    </div>
+
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">Tech<span>Ease</span> Reviews</div>
+  <p>Written by Shawn · <a href="https://simplyconnectedfl.com" target="_blank" rel="noopener">Simply Connected</a> · Venice, FL</p>
+  <p style="margin-top:8px;">Helping seniors in the Venice and Sarasota area get the most from their technology.</p>
+  <p style="margin-top:16px;"><a href="/">Home</a> &nbsp;·&nbsp; <a href="/about.html">About</a> &nbsp;·&nbsp; <a href="/contact.html">Contact</a> &nbsp;·&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:16px; font-size:12px; color:rgba(255,255,255,0.25);">TechEase Reviews may earn a small commission on purchases made through links on this site, at no extra cost to you.</p>
+</footer>
+
+</body>
+</html>

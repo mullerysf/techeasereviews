@@ -1,0 +1,110 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/article2-best-ipad-for-seniors"
+  to = "/article2-best-ipad-for-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article3-phones-biggest-text"
+  to = "/article3-phones-biggest-text.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article4-stop-robocalls"
+  to = "/article4-stop-robocalls.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article5-best-tablets-for-seniors"
+  to = "/article5-best-tablets-for-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article6-best-wifi-routers"
+  to = "/article6-best-wifi-routers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article7-tech-scams-seniors"
+  to = "/article7-tech-scams-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article8-medical-alert-watches"
+  to = "/article8-medical-alert-watches.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article9-iphone-setup-senior-parent"
+  to = "/article9-iphone-setup-senior-parent.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article10-best-tech-gifts-seniors"
+  to = "/article10-best-tech-gifts-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article11-wifi-calling-seniors"
+  to = "/article11-wifi-calling-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article12-best-android-tablets-seniors"
+  to = "/article12-best-android-tablets-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article13-best-ipad-for-elderly"
+  to = "/article13-best-ipad-for-elderly.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article14-best-ipad-for-grandparents"
+  to = "/article14-best-ipad-for-grandparents.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article15-ipad-basics-seniors"
+  to = "/article15-ipad-basics-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article16-best-ipad-70-year-old"
+  to = "/article16-best-ipad-70-year-old.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/article17-best-iphone-for-seniors"
+  to = "/article17-best-iphone-for-seniors.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+  force = true

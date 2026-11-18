@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://techeasereviews.com/contact.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & In-Home Tech Support — Simply Connected · Venice, FL | TechEase Reviews</title>
+<meta name="description" content="Need in-home tech support in Venice, Florida? Simply Connected provides patient, friendly technology help for seniors and snowbirds. See services, pricing, and get in touch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest: #1d3a2a; --sage: #4a7c5f; --mint: #7ec8a0;
+  --warm: #f5f0e8; --paper: #faf8f4; --gold: #c9873a;
+  --text: #1a2218; --muted: #7a8c7e; --border: #dde8e1;
+  --amber: #92400e;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--paper); color: var(--text); font-size: 16px; line-height: 1.7; }
+
+nav { background: var(--forest); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+.nav-logo { font-family: 'Lora', Georgia, serif; font-size: 22px; color: white; text-decoration: none; }
+.nav-logo span { color: var(--mint); }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--mint); }
+
+/* HERO */
+.hero {
+  background: linear-gradient(160deg, #0e1e14 0%, #1d3a2a 55%, #0e1e14 100%);
+  padding: 72px 32px 90px; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 40%, rgba(126,200,160,0.15) 0%, transparent 55%),
+              radial-gradient(ellipse at 15% 80%, rgba(201,135,58,0.08) 0%, transparent 45%);
+}
+.hero::after { content: '🛠️'; position: absolute; right: 80px; top: 50%; transform: translateY(-50%); font-size: 140px; opacity: 0.07; }
+.hero-inner { max-width: 720px; margin: 0 auto; position: relative; }
+.hero-tag { display: inline-block; background: rgba(126,200,160,0.15); border: 1px solid rgba(126,200,160,0.35); color: var(--mint); font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 22px; }
+.hero h1 { font-family: 'Lora', Georgia, serif; font-size: clamp(32px, 4.5vw, 52px); color: white; line-height: 1.2; margin-bottom: 18px; }
+.hero h1 em { font-style: italic; color: var(--mint); }
+.hero-desc { font-size: 17px; color: rgba(255,255,255,0.68); line-height: 1.8; max-width: 560px; margin-bottom: 32px; }
+
+.hero-contact-bar {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.contact-pill {
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px; padding: 12px 20px;
+  text-decoration: none; transition: background 0.2s;
+}
+.contact-pill:hover { background: rgba(255,255,255,0.14); }
+.contact-pill .cp-icon { font-size: 20px; }
+.contact-pill .cp-label { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-bottom: 2px; }
+.contact-pill .cp-value { font-size: 15px; color: white; font-weight: 600; }
+
+/* MAIN */
+.main { max-width: 920px; margin: 0 auto; padding: 56px 32px; }
+
+/* SECTION HEADERS */
+.section-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--sage); font-weight: 600; margin-bottom: 8px; }
+.section-title { font-family: 'Lora', Georgia, serif; font-size: 28px; color: var(--forest); margin-bottom: 12px; line-height: 1.25; }
+.section-sub { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 36px; max-width: 600px; }
+
+/* HOW PRICING WORKS */
+.pricing-intro {
+  background: white; border: 1px solid var(--border);
+  border-radius: 16px; padding: 32px 36px; margin-bottom: 40px;
+}
+.pi-title { font-family: 'Lora', Georgia, serif; font-size: 20px; color: var(--forest); margin-bottom: 14px; }
+.pi-text { font-size: 15px; color: #2e3e32; line-height: 1.8; margin-bottom: 20px; }
+
+.rate-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 20px; }
+.rate-card { background: var(--warm); border-radius: 10px; padding: 18px 20px; border-top: 3px solid var(--mint); }
+.rc-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.rc-price { font-family: 'Lora', Georgia, serif; font-size: 26px; font-weight: 700; color: var(--forest); margin-bottom: 4px; }
+.rc-desc { font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+.example-box {
+  background: var(--forest); border-radius: 10px; padding: 16px 20px;
+  margin-top: 20px; display: flex; align-items: center; gap: 14px;
+}
+.eb-icon { font-size: 24px; flex-shrink: 0; }
+.eb-text { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.65; }
+.eb-text strong { color: white; }
+
+/* SERVICES TABLE */
+.services-section { margin-bottom: 48px; }
+
+.services-grid { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+
+.service-row {
+  background: white; border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px 20px;
+  display: grid; grid-template-columns: 36px 1fr auto auto;
+  gap: 14px; align-items: center;
+  transition: box-shadow 0.2s;
+}
+.service-row:hover { box-shadow: 0 4px 16px rgba(29,58,42,0.08); }
+
+.sr-icon { font-size: 22px; }
+.sr-name { font-weight: 600; font-size: 15px; color: var(--forest); }
+.sr-duration { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.sr-price { font-family: 'Lora', Georgia, serif; font-size: 20px; font-weight: 700; color: var(--forest); white-space: nowrap; text-align: right; }
+.sr-note { font-size: 11px; color: var(--muted); text-align: right; margin-top: 2px; }
+
+.discount-badge {
+  background: #e8f5ee; border: 1px solid var(--mint);
+  border-radius: 8px; padding: 12px 16px; margin-top: 14px;
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; color: var(--sage);
+}
+.discount-badge strong { color: var(--forest); }
+
+/* PLANS */
+
+/* REMOTE & ONCALL */
+.remote-section { margin-bottom: 48px; }
+.remote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 8px; }
+.remote-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.remote-icon { font-size: 26px; margin-bottom: 10px; }
+.remote-name { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 4px; }
+.remote-price { font-family: 'Lora', Georgia, serif; font-size: 22px; color: var(--forest); font-weight: 700; margin-bottom: 6px; }
+.remote-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* CONTACT CTA */
+.contact-cta {
+  background: linear-gradient(135deg, var(--forest), #2d5040);
+  border-radius: 16px; padding: 44px 48px; margin-bottom: 48px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 40px; align-items: center;
+}
+.cc-title { font-family: 'Lora', Georgia, serif; font-size: 26px; color: white; margin-bottom: 10px; line-height: 1.25; }
+.cc-desc { font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.75; margin-bottom: 20px; }
+.cc-details { display: flex; flex-direction: column; gap: 10px; }
+.cc-detail { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.85); }
+.cc-detail .icon { color: var(--mint); font-size: 18px; flex-shrink: 0; }
+.cc-detail a { color: white; text-decoration: none; font-weight: 600; }
+.cc-detail a:hover { color: var(--mint); }
+
+.email-btn {
+  display: inline-block;
+  background: var(--gold); color: white;
+  font-weight: 700; font-size: 15px;
+  padding: 16px 32px; border-radius: 10px;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.2s;
+  box-shadow: 0 4px 20px rgba(201,135,58,0.4);
+}
+.email-btn:hover { background: #b5762c; }
+
+/* SERVICE AREA */
+.area-section {
+  background: white; border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px 32px; margin-bottom: 48px;
+}
+.area-title { font-family: 'Lora', Georgia, serif; font-size: 20px; color: var(--forest); margin-bottom: 14px; }
+.area-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+.area-item { background: var(--warm); border-radius: 8px; padding: 10px 14px; font-size: 13.5px; color: #2e3e32; display: flex; align-items: center; gap: 8px; }
+.area-item::before { content: '📍'; font-size: 14px; }
+.area-note { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+/* TIP BOX */
+.tip-box { background: #fffbf0; border: 1px solid #f0ddb0; border-left: 5px solid var(--gold); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 24px 0; }
+.tip-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin-bottom: 8px; }
+.tip-box p { font-size: 14px; color: #6a5020; line-height: 1.7; margin: 0; }
+
+footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
+.footer-inner { max-width: 960px; margin: 0 auto; text-align: center; }
+.footer-brand { font-family: 'Lora', Georgia, serif; font-size: 20px; color: white; margin-bottom: 8px; }
+.footer-brand span { color: var(--mint); }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .rate-cards, .remote-grid { grid-template-columns: 1fr; }
+  .area-grid { grid-template-columns: 1fr 1fr; }
+  .contact-cta { grid-template-columns: 1fr; }
+  .service-row { grid-template-columns: 36px 1fr; }
+  .sr-price, .sr-note { display: none; }
+  nav .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Tech<span>Ease</span> Reviews</a>
+  <ul class="nav-links">
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#categories">Categories</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" style="color:var(--mint);">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Simply Connected · Venice, FL</div>
+    <h1>In-Home Tech Support<br><em>Right Here in Venice.</em></h1>
+    <p class="hero-desc">TechEase Reviews is written by Shawn, owner of Simply Connected — a patient, friendly in-home technology support service for seniors and seasonal residents throughout the Venice area. If you need hands-on help, we come to you.</p>
+    <div class="hero-contact-bar">
+      <a class="contact-pill" href="/cdn-cgi/l/email-protection#b5c6dcd8c5d9ccd6dadbdbd0d6c1d0d1c3d0dbdcd6d0f5d2d8d4dcd99bd6dad8">
+        <div class="cp-icon">✉️</div>
+        <div>
+          <div class="cp-label">Email Us</div>
+          <div class="cp-value"><span class="__cf_email__" data-cfemail="f5869c9885998c969a9b9b909681909183909b9c9690b59298949c99db969a98">[email&#160;protected]</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="main">
+
+  <!-- HOW PRICING WORKS -->
+  <div class="pricing-intro">
+    <div class="pi-title">How Pricing Works</div>
+    <p class="pi-text">Every visit starts with a flat $95 house call fee — this covers your first hour of work no matter how fast the job goes. If a job runs longer, additional time is billed in 30-minute increments. Simple, fair, and easy to understand upfront. There are never surprise charges.</p>
+
+    <div class="rate-cards">
+      <div class="rate-card">
+        <div class="rc-label">House Call / First Hour</div>
+        <div class="rc-price">$95</div>
+        <div class="rc-desc">Covers every visit regardless of duration. Most jobs are done within this.</div>
+      </div>
+      <div class="rate-card">
+        <div class="rc-label">Additional Time</div>
+        <div class="rc-price">$45</div>
+        <div class="rc-desc">Per additional half hour after the first hour.</div>
+      </div>
+      <div class="rate-card" style="border-top-color: var(--gold);">
+        <div class="rc-label">Same-Day / Emergency</div>
+        <div class="rc-price">+$30</div>
+        <div class="rc-desc">Added to standard rate for same-day availability.</div>
+      </div>
+    </div>
+
+    <div class="example-box">
+      <div class="eb-icon">💡</div>
+      <div class="eb-text"><strong>Example:</strong> A Nest thermostat install takes about 75 minutes → $95 + $45 = <strong>$140 total.</strong> You'll always be told the estimate before work begins.</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services-section" id="services">
+    <div class="section-label">What We Do</div>
+    <div class="section-title">Services & Typical Pricing</div>
+    <p class="section-sub">These are typical durations and charges. Every job is quoted before we start — no surprises.</p>
+
+    <div class="services-grid">
+      <div class="service-row">
+        <div class="sr-icon">📱</div>
+        <div>
+          <div class="sr-name">Smartphone or Tablet Setup</div>
+          <div class="sr-duration">Typically 45–60 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">🔔</div>
+        <div>
+          <div class="sr-name">Ring / Video Doorbell Install & Setup</div>
+          <div class="sr-duration">Typically 45–60 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">🌡️</div>
+        <div>
+          <div class="sr-name">Smart Thermostat (Nest / Ecobee)</div>
+          <div class="sr-duration">Typically 60–90 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95–$140</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">📡</div>
+        <div>
+          <div class="sr-name">Wi-Fi Troubleshooting & Connectivity</div>
+          <div class="sr-duration">Typically 30–60 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">📺</div>
+        <div>
+          <div class="sr-name">Streaming Device Setup (Roku, Fire Stick, etc.)</div>
+          <div class="sr-duration">Typically 30–45 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">📷</div>
+        <div>
+          <div class="sr-name">Security Camera Setup</div>
+          <div class="sr-duration">Typically 45–60 min per camera</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">Per camera</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">🔊</div>
+        <div>
+          <div class="sr-name">AI & Voice Assistant Setup & Training</div>
+          <div class="sr-duration">Typically 45–60 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">📹</div>
+        <div>
+          <div class="sr-name">Video Calling Setup & Training</div>
+          <div class="sr-duration">Typically 30–45 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row">
+        <div class="sr-icon">🖥️</div>
+        <div>
+          <div class="sr-name">Multi-Device or Complex Setup</div>
+          <div class="sr-duration">Typically 90–120 min</div>
+        </div>
+        <div>
+          <div class="sr-price">$140–$185</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="service-row" style="border-color: var(--gold);">
+        <div class="sr-icon">❄️</div>
+        <div>
+          <div class="sr-name">Pre-Departure Snowbird Device Check</div>
+          <div class="sr-duration">Full device audit before heading north</div>
+        </div>
+        <div>
+          <div class="sr-price">$95</div>
+          <div class="sr-note">All-in</div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="discount-badge">
+      <span>💡</span>
+      <span><strong>Booking multiple services in one visit?</strong> A 10% courtesy discount applies — you're saving a second trip too.</span>
+    </div>
+  </div>
+
+  <!-- REMOTE SUPPORT -->
+  <div class="remote-section" id="remote">
+    <div class="section-label">Remote & On-Call Support</div>
+    <div class="section-title">Help That Doesn't Require a Visit</div>
+    <p class="section-sub">Some problems don't need a house call. Quick questions and software issues can often be resolved remotely.</p>
+
+    <div class="remote-grid">
+      <div class="remote-card">
+        <div class="remote-icon">💬</div>
+        <div class="remote-name">Quick Phone or Text Support</div>
+        <div class="remote-price" style="color: var(--sage);">Free</div>
+        <div class="remote-desc">Under 15 minutes. Included at no charge for all active monthly plan members.</div>
+      </div>
+      <div class="remote-card">
+        <div class="remote-icon">🖥️</div>
+        <div class="remote-name">Remote Screen-Share Session</div>
+        <div class="remote-price">$40</div>
+        <div class="remote-desc">30-minute session for software issues that don't require a visit. We connect to your screen and fix it together.</div>
+      </div>
+      <div class="remote-card" style="border-top: 3px solid var(--gold);">
+        <div class="remote-icon">❄️</div>
+        <div class="remote-name">Pre-Departure Snowbird Check</div>
+        <div class="remote-price">$95</div>
+        <div class="remote-desc">Full device audit before heading north for the summer. Make sure everything is secure and ready for your return.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <div class="contact-cta" id="contact">
+    <div>
+      <div class="cc-title">Ready to Book or Have a Question?</div>
+      <p class="cc-desc">Send an email and we'll get back to you promptly — usually within a few hours. Let us know what you need help with and we'll give you an honest estimate before scheduling anything.</p>
+      <div class="cc-details">
+        <div class="cc-detail"><span class="icon">✉️</span><a href="/cdn-cgi/l/email-protection#ec9f85819c80958f838282898f9889889a8982858f89ac8b818d8580c28f8381"><span class="__cf_email__" data-cfemail="04776d6974687d676b6a6a616770616072616a6d6761446369656d682a676b69">[email&#160;protected]</span></a></div>
+        <div class="cc-detail"><span class="icon">📍</span><span>Serving Stoneybrook, Venice, North Port & surrounding areas</span></div>
+        <div class="cc-detail"><span class="icon">⏱️</span><span>Typically respond within a few hours</span></div>
+      </div>
+    </div>
+    <div>
+      <a href="/cdn-cgi/l/email-protection#ff8c96928f93869c9091919a9c8b9a9b899a91969c9abf98929e9693d19c9092c08c8a9d959a9c8bc2ac96928f9386dfbc9091919a9c8b9a9bdfd2dfac9a8d89969c9adfad9a8e8a9a8c8bd99d909b86c2b796dfac979e8891d3dacfbbdacfbedacfbbdacfbeb6d892df96918b9a8d9a8c8b9a9bdf9691df86908a8ddf8b9a9c97df8c8a8f8f908d8bdf8c9a8d89969c9a8cd1dfb79a8d9ad88cdf88979e8bdfb6df919a9a9bdf979a938fdf88968b97c5dacfbbdacfbedacfbbdacfbea49b9a8c9c8d969d9adf86908a8ddf968c8c8a9adf979a8d9aa2dacfbbdacfbedacfbbdacfbeb286df919e929ac5dacfbbdacfbeb286df9e9b9b8d9a8c8cdfd0df9c9092928a91968b86c5dacfbbdacfbebd9a8c8bdf8b96929adf8b90df8d9a9e9c97df929ac5dacfbbdacfbedacfbbdacfbeab979e9194df86908ade" class="email-btn">Send an Email →</a>
+    </div>
+  </div>
+
+  <!-- SERVICE AREA -->
+  <div class="area-section">
+    <div class="area-title">📍 Service Area</div>
+    <div class="area-grid">
+      <div class="area-item">Venice</div>
+      <div class="area-item">Stoneybrook</div>
+      <div class="area-item">North Port</div>
+      <div class="area-item">Nokomis</div>
+      <div class="area-item">Osprey</div>
+      <div class="area-item">Englewood</div>
+      <div class="area-item">South Venice</div>
+      <div class="area-item">Wellen Park</div>
+    </div>
+    <p class="area-note">A $15 travel surcharge applies for locations more than 10 miles from Venice. Not sure if we cover your area? Just send an email and ask — we're happy to let you know.</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">💡 Snowbird Friendly</div>
+    <p>Many of our snowbird clients book a pre-departure device check to make sure everything is secure before heading north, and a setup visit when they arrive back in the fall. Yo

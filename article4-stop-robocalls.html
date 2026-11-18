@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://techeasereviews.com/article4-stop-robocalls.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Stop Robocalls on iPhone and Android (2026) — TechEase Reviews</title>
+<meta name="description" content="Fed up with robocalls? Here's exactly what works in 2026 — step-by-step instructions for iPhone and Android, plus free carrier tools most people don't know about.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest: #1d3a2a;
+  --sage: #4a7c5f;
+  --mint: #7ec8a0;
+  --warm: #f5f0e8;
+  --paper: #faf8f4;
+  --gold: #c9873a;
+  --text: #1a2218;
+  --muted: #7a8c7e;
+  --border: #dde8e1;
+  --red: #c0392b;
+  --red-light: #fdf0ee;
+  --blue: #2a5878;
+  --blue-light: #e8f2f8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--paper); color: var(--text); font-size: 16px; line-height: 1.7; }
+
+/* NAV */
+nav { background: var(--forest); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+.nav-logo { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 22px; color: white; text-decoration: none; }
+.nav-logo span { color: var(--mint); }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.72); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--mint); }
+
+/* HERO — deep red/burgundy tone, distinct from other articles */
+.article-hero {
+  background: linear-gradient(160deg, #1a0a0a 0%, #4a1010 55%, #1a0a0a 100%);
+  padding: 64px 32px 80px;
+  position: relative; overflow: hidden;
+}
+.article-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 85% 40%, rgba(192,57,43,0.2) 0%, transparent 55%),
+              radial-gradient(ellipse at 15% 70%, rgba(126,200,160,0.06) 0%, transparent 45%);
+}
+.article-hero::after {
+  content: '📵';
+  position: absolute; right: 80px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 150px; opacity: 0.07;
+}
+
+.hero-inner { max-width: 780px; margin: 0 auto; position: relative; }
+
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
+.breadcrumb a { color: #e88080; text-decoration: none; }
+.breadcrumb span { color: rgba(255,255,255,0.2); }
+
+.article-cat {
+  display: inline-block;
+  background: rgba(192,57,43,0.25);
+  border: 1px solid rgba(192,57,43,0.4);
+  color: #e88080; font-size: 11px; font-weight: 600;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 20px; margin-bottom: 18px;
+}
+
+.article-hero h1 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: clamp(28px, 4vw, 46px); color: white; line-height: 1.2; margin-bottom: 18px; }
+.article-hero h1 em { font-style: italic; color: #e88080; }
+.article-meta { display: flex; align-items: center; gap: 16px; font-size: 13px; color: rgba(255,255,255,0.5); flex-wrap: wrap; }
+.meta-dot { color: rgba(255,255,255,0.2); }
+
+/* LAYOUT */
+.page-layout { max-width: 1100px; margin: 0 auto; padding: 48px 32px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
+
+/* ARTICLE */
+.article-content { background: white; border-radius: 16px; border: 1px solid var(--border); overflow: visible; min-width: 0; }
+.article-body { padding: 44px 48px; }
+
+.article-body h2 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 24px; color: var(--forest); margin: 36px 0 14px; padding-top: 8px; }
+.article-body h3 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 19px; color: var(--forest); margin: 24px 0 12px; }
+.article-body p { font-size: 15.5px; line-height: 1.85; color: #2e3e32; margin-bottom: 18px; }
+.article-body p strong { color: var(--forest); }
+.article-body ul { margin: 0 0 18px 20px; }
+.article-body ul li { font-size: 15px; line-height: 1.8; color: #2e3e32; margin-bottom: 6px; }
+
+.pull-quote { border-left: 4px solid #e88080; padding: 4px 0 4px 20px; margin: 0 0 28px; font-size: 17px; font-style: italic; color: var(--muted); line-height: 1.75; }
+
+/* QUICK ANSWER */
+.quick-answer { background: var(--blue-light); border: 1px solid #c5daea; border-left: 5px solid var(--blue); border-radius: 0 10px 10px 0; padding: 20px 24px; margin: 28px 0; }
+.qa-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+.qa-answer { font-size: 15px; font-weight: 600; color: #1a3050; line-height: 1.6; }
+
+/* WARNING BOX */
+.warning-box {
+  background: var(--red-light);
+  border: 1px solid #f0c0bc;
+  border-left: 5px solid var(--red);
+  border-radius: 0 10px 10px 0;
+  padding: 18px 22px; margin: 24px 0;
+}
+.wb-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.warning-box p { font-size: 14px; color: #6a1010; line-height: 1.7; margin: 0; }
+
+/* STEP SECTION */
+.step-section {
+  border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+  margin: 28px 0;
+}
+
+.step-section-header {
+  padding: 18px 24px;
+  display: flex; align-items: center; gap: 14px;
+}
+
+.iphone-header { background: linear-gradient(135deg, #1a2a3a, #2a4060); }
+.android-header { background: linear-gradient(135deg, #1a3a1a, #2a5a2a); }
+.carrier-header { background: linear-gradient(135deg, #3a2a10, #5a4020); }
+.donotcall-header { background: linear-gradient(135deg, #3a1a1a, #5a2a20); }
+
+.ssh-icon { font-size: 28px; }
+.ssh-text h3 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 19px; color: white; margin: 0 0 3px; }
+.ssh-text p { font-size: 12px; color: rgba(255,255,255,0.6); margin: 0; }
+
+.step-section-body { padding: 24px; background: white; }
+
+/* STEPS */
+.steps { display: flex; flex-direction: column; gap: 12px; }
+
+.step {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: var(--warm);
+}
+
+.step-num {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: 16px; font-weight: 700;
+  color: white; flex-shrink: 0;
+}
+
+.iphone-num { background: #2a4060; }
+.android-num { background: #2a5a2a; }
+.carrier-num { background: #5a4020; }
+
+.step-content {}
+.step-title { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 4px; }
+.step-desc { font-size: 13.5px; color: #3a4e3e; line-height: 1.6; }
+.step-path {
+  display: inline-block;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12.5px;
+  font-family: monospace;
+  color: var(--blue);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* CARRIER GRID */
+.carrier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 4px; }
+
+.carrier-card {
+  background: var(--warm);
+  border-radius: 10px; padding: 16px 18px;
+  border-top: 3px solid var(--gold);
+}
+
+.cc-name { font-weight: 700; font-size: 15px; color: var(--forest); margin-bottom: 4px; }
+.cc-feature { font-size: 13px; color: var(--sage); font-weight: 600; margin-bottom: 6px; }
+.cc-desc { font-size: 13px; color: #3a4e3e; line-height: 1.6; }
+.cc-cost { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 10px; border-radius: 8px; }
+.cc-free { background: #d5f5e3; color: #1a7a3a; }
+.cc-paid { background: #fff3e0; color: #8a5010; }
+
+/* TIP BOX */
+.tip-box { background: #fffbf0; border: 1px solid #f0ddb0; border-left: 5px solid var(--gold); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 24px 0; }
+.tip-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8a5010; margin-bottom: 8px; }
+.tip-box p { font-size: 14px; color: #6a5020; line-height: 1.7; margin: 0; }
+
+/* SCAM TYPES */
+.scam-list { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; }
+
+.scam-item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  align-items: start;
+  background: var(--red-light);
+  border: 1px solid #f0c0bc;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.scam-icon { font-size: 24px; margin-top: 2px; }
+.scam-name { font-weight: 700; font-size: 14px; color: var(--red); margin-bottom: 4px; }
+.scam-desc { font-size: 13.5px; color: #4a1010; line-height: 1.6; }
+.scam-rule { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 700; color: white; background: var(--red); padding: 3px 10px; border-radius: 6px; }
+
+/* FINAL VERDICT */
+.final-verdict { background: linear-gradient(135deg, #1d3a2a, #2d5040); border-radius: 14px; padding: 32px 36px; margin: 32px 0; display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; }
+.verdict-icon { font-size: 48px; }
+.fv-content h3 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 20px; color: white; margin-bottom: 10px; }
+.fv-content p { font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.72); margin: 0 0 10px; }
+
+/* SIDEBAR */
+.sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 84px; align-self: start; max-height: calc(100vh - 100px); overflow-y: auto; padding-right: 4px; }
+.sidebar-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.sidebar-card h4 { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 15px; color: var(--forest); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+
+.toc-list { list-style: none; }
+.toc-list li a { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border); text-decoration: none; font-size: 13px; color: var(--muted); transition: color 0.2s; }
+.toc-list li:last-child a { border-bottom: none; }
+.toc-list li a:hover { color: var(--sage); }
+.toc-num { width: 22px; height: 22px; background: var(--warm); border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--sage); flex-shrink: 0; }
+
+.quick-steps-card { background: var(--forest); border-radius: 12px; padding: 20px; }
+.quick-steps-card h4 { color: white; border-color: rgba(255,255,255,0.15); font-family: 'Lora', Georgia, serif; font-size: 15px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid rgba(255,255,255,0.15); }
+.qs-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 12.5px; color: rgba(255,255,255,0.75); line-height: 1.5; }
+.qs-item:last-child { border-bottom: none; }
+.qs-check { color: var(--mint); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+.related-list { list-style: none; }
+.related-item { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.related-item:last-child { border-bottom: none; }
+.ri-arrow { color: var(--sage); font-weight: 700; }
+.related-item a { text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.2s; }
+.related-item a:hover { color: var(--sage); }
+
+/* FOOTER */
+footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
+.footer-inner { max-width: 960px; margin: 0 auto; text-align: center; }
+.footer-brand { font-family: 'Lora', Georgia, 'Times New Roman', serif; font-size: 20px; color: white; margin-bottom: 8px; }
+.footer-brand span { color: var(--mint); }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .page-layout { grid-template-columns: 1fr; }
+  .article-body { padding: 28px 24px; }
+  .carrier-grid { grid-template-columns: 1fr; }
+  .final-verdict { grid-template-columns: 1fr; }
+  nav .nav-links { display: none; }
+}
+
+/* Q&A SECTION */
+.qa-section { margin: 36px 0; }
+.qa-section h2 { font-family: 'Lora', Georgia, serif; font-size: 24px; color: var(--forest); margin-bottom: 8px; }
+.qa-intro-text { font-size: 14px; color: var(--muted); margin-bottom: 24px; line-height: 1.7; }
+.qa-item { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 14px; }
+.qa-question { background: var(--warm); padding: 16px 20px; font-weight: 700; font-size: 15px; color: var(--forest); display: flex; align-items: center; gap: 10px; }
+.qa-q-icon { color: var(--sage); font-size: 18px; flex-shrink: 0; }
+.qa-answer { padding: 16px 20px; background: white; font-size: 14.5px; color: #2e3e32; line-height: 1.8; }
+.qa-answer strong { color: var(--forest); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Tech<span>Ease</span> Reviews</a>
+  <ul class="nav-links">
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#categories">Categories</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="article-hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <a href="#">Tips & Guides</a>
+      <span>›</span>
+      <span>Stop Robocalls</span>
+    </div>
+    <div class="article-cat">Phone Tips & Guides</div>
+    <h1>How to Stop Robocalls on iPhone<br>and Android <em>(2026)</em> —<br>What Actually Works</h1>
+    <div class="article-meta">
+      <span>By Shawn · TechEase Reviews</span>
+      <span class="meta-dot">·</span>
+      <span>Updated January 2026</span>
+      <span class="meta-dot">·</span>
+      <span>9 min read</span>
+      <span class="meta-dot">·</span>
+      <span>No products to buy — just free fixes</span>
+    </div>
+  </div>
+</section>
+
+<div class="page-layout">
+
+  <article class="article-content">
+    <div class="article-body">
+
+      <p class="pull-quote">"Robocalls are the number one complaint I hear from seniors in the Venice area. Most people don't know that their phone and their carrier already have free tools built in to stop them — they just need to be turned on."</p>
+
+      <div class="quick-answer">
+        <div class="qa-label">⚡ Quick Answer — Do These Right Now</div>
+        <div class="qa-answer">
+          <strong>iPhone:</strong> Settings → Phone → Silence Unknown Callers → ON<br>
+          <strong>Android:</strong> Phone app → three dots menu → Settings → Caller ID & Spam → Filter spam calls → ON<br>
+          <strong>All carriers:</strong> Call or text your carrier to enable their free spam blocking — details below.
+        </div>
+      </div>
+
+      <p>Americans received over 50 billion robocalls last year. That's roughly 150 per person. If it feels like your phone rings constantly with numbers you don't recognize, you're not imagining it — and you're not alone. The good news: there are several free, built-in tools that dramatically reduce robocalls without paying for any app or service.</p>
+
+      <p>I'm going to walk you through every method, starting with the most effective. Work through these in order and by the end you'll have cut your robocalls by 80–90%.</p>
+
+      <div class="warning-box">
+        <div class="wb-label">⚠️ Important: What Robocallers Want</div>
+        <p>Before we fix this, understand one thing: <strong>never press any number</strong> when a robocall asks you to "press 1 to be removed from our list" or "press 2 to speak to an agent." Pressing any key confirms your number is active and gets you added to more lists. The only right move is to hang up immediately.</p>
+      </div>
+
+      <h2 id="iphone">Method 1: Silence Unknown Callers (iPhone)</h2>
+
+      <div class="step-section">
+        <div class="step-section-header iphone-header">
+          <div class="ssh-icon">🍎</div>
+          <div class="ssh-text">
+            <h3>iPhone: Silence Unknown Callers</h3>
+            <p>Works on any iPhone running iOS 13 or later · Takes 60 seconds</p>
+          </div>
+        </div>
+        <div class="step-section-body">
+          <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">This is the single most effective robocall fix for iPhone users. When enabled, any call from a number not in your contacts, recent calls, or Siri suggestions goes straight to voicemail — silently. Legitimate callers leave a voicemail. Robocallers don't.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num iphone-num">1</div>
+              <div class="step-content">
+                <div class="step-title">Open Settings</div>
+                <div class="step-desc">Tap the gray gear icon on your home screen.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num iphone-num">2</div>
+              <div class="step-content">
+                <div class="step-title">Tap "Phone"</div>
+                <div class="step-desc">Scroll down until you see the green Phone icon. Tap it.</div>
+                <div class="step-path">Settings → Phone</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num iphone-num">3</div>
+              <div class="step-content">
+                <div class="step-title">Tap "Silence Unknown Callers"</div>
+                <div class="step-desc">It's about halfway down the screen. Tap it to open the setting.</div>
+                <div class="step-path">Settings → Phone → Silence Unknown Callers</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num iphone-num">4</div>
+              <div class="step-content">
+                <div class="step-title">Toggle it ON</div>
+                <div class="step-desc">Tap the switch so it turns green. You're done. Unknown callers will now go straight to voicemail.</div>
+              </div>
+            </div>
+          </div>
+          <div class="tip-box" style="margin-top: 16px; margin-bottom: 0;">
+            <div class="tip-label">💡 Important Note</div>
+            <p>Make sure any doctors, pharmacies, or businesses you deal with regularly are saved in your Contacts — otherwise their calls will also go to voicemail. This is easy to fix: just add them as contacts and they'll ring through normally.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="android">Method 2: Filter Spam Calls (Android)</h2>
+
+      <div class="step-section">
+        <div class="step-section-header android-header">
+          <div class="ssh-icon">🤖</div>
+          <div class="ssh-text">
+            <h3>Android: Google's Spam Filter</h3>
+            <p>Works on most Android phones with Google's Phone app · Takes 60 seconds</p>
+          </div>
+        </div>
+        <div class="step-section-body">
+          <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Google's Phone app has a built-in spam filter that identifies and blocks known robocall numbers automatically. It's updated constantly as Google identifies new spam numbers. Most Android phones have this already — it just needs to be switched on.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num android-num">1</div>
+              <div class="step-content">
+                <div class="step-title">Open the Phone app</div>
+                <div class="step-desc">Tap the green phone icon — the one you use to make calls.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num android-num">2</div>
+              <div class="step-content">
+                <div class="step-title">Tap the three dots (⋮) in the top right corner</div>
+                <div class="step-desc">This opens a small menu. Tap "Settings" from the menu.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num android-num">3</div>
+              <div class="step-content">
+                <div class="step-title">Tap "Caller ID & Spam"</div>
+                <div class="step-desc">You'll see this option in the settings list.</div>
+                <div class="step-path">Phone app → ⋮ → Settings → Caller ID & Spam</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num android-num">4</div>
+              <div class="step-content">
+                <div class="step-title">Turn on "Filter spam calls"</div>
+                <div class="step-desc">Toggle the switch. Spam calls will now be automatically declined and logged — you'll see a "Spam" label in your recent calls list.</div>
+              </div>
+            </div>
+          </div>
+          <div class="tip-box" style="margin-top: 16px; margin-bottom: 0;">
+            <div class="tip-label">💡 Samsung Users</div>
+            <p>If you have a Samsung Galaxy, open the Phone app → tap the three lines menu → Settings → Block numbers → turn on "Block calls from unknown numbers." This works alongside Google's filter for double protection.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="carrier">Method 3: Free Tools From Your Carrier</h2>
+
+      <p>This is the step most people skip — and it's completely free. Every major carrier offers a spam blocking service. Call or text your carrier and ask them to enable it on your account. Here's exactly what each carrier offers:</p>
+
+      <div class="step-section">
+        <div class="step-section-header carrier-header">
+          <div class="ssh-icon">📡</div>
+          <div class="ssh-text">
+            <h3>Carrier Spam Blocking — All Free</h3>
+            <p>Contact your carrier directly to activate · Takes 5 minutes</p>
+          </div>
+        </div>
+        <div class="step-section-body">
+          <div class="carrier-grid">
+            <div class="carrier-card">
+              <div class="cc-name">📱 Verizon</div>
+              <div class="cc-feature">Call Filter</div>
+              <div class="cc-desc">Text "FILTER" to 4673 or go to the My Verizon app → Account → Add-ons → Call Filter. Automatically identifies and blocks likely spam.</div>
+              <span class="cc-cost cc-free">FREE</span>
+            </div>
+            <div class="carrier-card">
+              <div class="cc-name">📱 AT&T</div>
+              <div class="cc-feature">ActiveArmor</div>
+              <div class="cc-desc">Download the AT&T ActiveArmor app or call AT&T at 1-800-288-2020 and ask them to enable fraud blocking on your line.</div>
+              <span class="cc-cost cc-free">FREE</span>
+            </div>
+            <div class="carrier-card">
+              <div class="cc-name">📱 T-Mobile</div>
+              <div class="cc-feature">Scam Shield</div>
+              <div class="cc-desc">Text "PROTECT" to 7726 or open the T-Mobile app → More → Scam Shield. Blocks known scam numbers and warns you about likely spam.</div>
+              <span class="cc-cost cc-free">FREE</span>
+            </div>
+            <div class="carrier-card">
+              <div class="cc-name">📱 Consumer Cellular</div>
+              <div class="cc-feature">Spam Call Blocking</div>
+              <div class="cc-desc">Call Consumer Cellular at 1-888-345-5509 and ask them to enable spam call blocking on your account. Popular with many seniors in our community.</div>
+              <span class="cc-cost cc-free">FREE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="donotcall">Method 4: The National Do Not Call Registry</h2>
+
+      <div class="step-section">
+        <div class="step-section-header donotcall-header">
+          <div class="ssh-icon">🏛️</div>
+          <div class="ssh-text">
+            <h3>FTC Do Not Call Registry</h3>
+            <p>Free federal registry · Stops legitimate telemarketers (not scammers)</p>
+          </div>
+        </div>
+        <div class="step-section-body">
+          <p style="font-size:14px; color:#2e3e32; margin-bottom: 16px;">The National Do Not Call Registry is run by the Federal Trade Commission (FTC) and is completely free. Registering your number means legitimate telemarketers are legally required to stop calling you within 31 days. It won't stop illegal robocallers and scammers — they ignore the list — but it eliminates the legitimate solicitation calls.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num carrier-num">1</div>
+              <div class="step-content">
+                <div class="step-title">Go to donotcall.gov</div>
+                <div class="step-desc">Type this address directly into your browser. The website is run by the U.S. government.</div>
+                <div class="step-path">donotcall.gov</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num carrier-num">2</div>
+              <div class="step-content">
+                <div class="step-title">Click "Register Your Phone"</div>
+                <div class="step-desc">Enter your phone number and email address. You'll get a confirmation email — click the link inside it to complete registration.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num carrier-num">3</div>
+              <div class="step-content">
+                <div class="step-title">Wait 31 days</div>
+                <div class="step-desc">Telemarketers have 31 days to remove you from their lists. Registration never expires — you only need to do this once.</div>
+              </div>
+            </div>
+          </div>
+          <div class="tip-box" style="margin-top: 16px; margin-bottom: 0;">
+            <div class="tip-label">💡 Already Registered?</div>
+            <p>You can verify your number is registered at donotcall.gov without re-registering. Registration is permanent and never expires — so if you registered years ago, you're still on the list.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="scams">Know These Robocall Scams — They Target Seniors Specifically</h2>
+
+      <p>Blocking tools stop most robocalls. But some still get through — and the ones that do are the most dangerous. These are the scams I see most often affecting seniors in the Venice area:</p>
+
+      <div class="scam-list">
+        <div class="scam-item">
+          <div class="scam-icon">🏛️</div>
+          <div>
+            <div class="scam-name">The "Social Security" Call</div>
+            <div class="scam-desc">A robotic or live voice claims your Social Security number has been "suspended" due to suspicious activity and you must call back immediately or face arrest. This is 100% fake. The Social Security Administration never calls to threaten suspension or arrest.</div>
+            <span class="scam-rule">Rule: Hang up. SSA contacts you by mail only.</span>
+          </div>
+        </div>
+        <div class="scam-item">
+          <div class="scam-icon">📦</div>
+          <div>
+            <div class="scam-name">The "Amazon Package" Call</div>
+            <div class="scam-desc">A call (often automated) claims there's a problem with your Amazon order or that a large purchase was made on your account. They ask you to "verify" your account by providing your login or payment information. Amazon does not make unsolicited calls about orders.</div>
+            <span class="scam-rule">Rule: Hang up. Log into amazon.com directly if concerned.</span>
+          </div>
+        </div>
+        <div class="scam-item">
+          <div class="scam-icon">🏦</div>
+          <div>
+            <div class="scam-name">The "Bank Fraud Alert" Call</div>
+            <div class="scam-desc">Caller claims to be from your bank's fraud department and says your account has been compromised. They ask you to confirm your account number, PIN, or transfer money to a "safe" account. Your real bank will never ask you to transfer money or share your PIN by phone.</div>
+            <span class="scam-rule">Rule: Hang up. Call the number on the back of your card.</span>
+          </div>
+        </div>
+        <div class="scam-item">
+          <div class="scam-icon">💰</div>
+          <div>
+            <div class="scam-name">The "You've Won a Prize" Call</div>
+            <div class="scam-desc">You've won a cruise, lottery, or sweepstakes — but you need to pay a small "processing fee" or "taxes" first using gift cards. No legitimate prize requires you to pay anything upfront. The gift card request is the universal sign of a scam.</div>
+            <span class="scam-rule">Rule: Hang up. Legitimate prizes never require gift cards.</span>
+          </div>
+        </div>
+        <div class="scam-item">
+          <div class="scam-icon">👨‍💻</div>
+          <div>
+            <div class="scam-name">The "Medicare/Insurance" Call</div>
+            <div class="scam-desc">Caller claims to be from Medicare or your insurance company and says you need a new card or updated information — they just need to verify your Medicare number. Your Medicare number is as sensitive as your Social Security number. Never give it out over the phone.</div>
+            <span class="scam-rule">Rule: Hang up. Medicare contacts you by mail only.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-box" style="margin-top: 28px;">
+        <div class="wb-label">🚨 If You Think You've Been Scammed</div>
+        <p>Don't be embarrassed — these scams fool people of all ages and intelligence levels. If you gave out personal information or sent money, call your bank immediately (number on the back of your card), then report it to the FTC at <strong>reportfraud.ftc.gov</strong>. Acting quickly can sometimes reverse wire transfers or stop further damage.</p>
+      </div>
+
+      <h2 id="apps">What About Robocall Blocking Apps?</h2>
+
+      <p>You've probably seen ads for apps like Nomorobo, Hiya, or RoboKiller. They work — but honestly, <strong>for most seniors the free built-in tools above do 90% of what these paid apps do</strong>. I rarely recommend spending money on a robocall app when the carrier tools and built-in phone settings are already excellent.</p>
+
+      <p>The one exception: if you've done everything above and are still getting flooded with calls, <strong>Nomorobo</strong> is the most reputable paid option at around $1.99/month. It has a strong track record and is legitimate — unlike some "call blocking" apps that are themselves scams.</p>
+
+      <div class="final-verdict">
+        <div class="verdict-icon">🛡️</div>
+        <div class="fv-content">
+          <h3>Do These 3 Things Today and You're 90% Protected</h3>
+          <p><strong>Step 1:</strong> Enable Silence Unknown Callers (iPhone) or Filter Spam Calls (Android) — takes 60 seconds.</p>
+          <p><strong>Step 2:</strong> Contact your carrier and ask them to enable their free spam blocking service.</p>
+          <p><strong>Step 3:</strong> Register at donotcall.gov if you haven't already.</p>
+          <p>You'll notice the difference within days. And remember — the calls that do get through are the most dangerous ones. Hang up on any call that creates urgency, asks for personal information, or requests gift cards. No legitimate organization does any of those things.</p>
+        </div>
+      </div>
+
+      <p style="font-size:13px; color:var(--muted); margin-top:24px; line-height:1.7;">
+        <strong>About the author:</strong> Shawn runs Simply Connected, providing in-home tech support for seniors and seasonal residents in the Venice, Florida area. If you'd like hands-on help setting up any of these protections, we come to you.
+      </p>
+
+      <div class="qa-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p class="qa-intro-text">Common questions about stopping robocalls on iPhone and Android — answered from real experience helping seniors in Venice, Florida.</p>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> How do I stop robocalls on my iPhone?</div>
+          <div class="qa-answer">The fastest way to stop robocalls on iPhone is to enable <strong>Silence Unknown Callers</strong>. Go to Settings → Phone → Silence Unknown Callers → toggle ON. This automatically silences calls from numbers not in your contacts and sends them to voicemail. You can still see missed calls and retrieve voicemails. For additional protection, contact your carrier and ask them to enable their free spam-blocking service — AT&T has Call Protect, Verizon has Call Filter, and T-Mobile has Scam Shield, all available at no charge.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> How do I stop robocalls on Android?</div>
+          <div class="qa-answer">On Android, open the Phone app → tap the three dots (⋮) in the top right → Settings → Caller ID & Spam → turn on <strong>Filter spam calls</strong>. This uses Google's spam database to automatically block known robocallers. For Samsung phones specifically, go to Phone app → ⋮ → Settings → Block numbers → enable Block unknown callers. Also register your number at donotcall.gov — it won't stop all robocalls but does reduce legitimate telemarketing calls significantly.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best way to stop robocalls for seniors?</div>
+          <div class="qa-answer">For seniors, the most effective combination is: (1) <strong>Enable your phone's built-in spam filter</strong> — free and requires no app. (2) <strong>Register at donotcall.gov</strong> — reduces legitimate telemarketing. (3) <strong>Enable your carrier's free blocking service</strong> — AT&T Call Protect, Verizon Call Filter, or T-Mobile Scam Shield. (4) <strong>Never engage with robocalls</strong> — don't press 1 to be removed from a list, as this confirms your number is active and often results in more calls. These four steps together eliminate the majority of robocalls without spending anything.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Does the Do Not Call Registry actually stop robocalls?</div>
+          <div class="qa-answer">The Do Not Call Registry reduces legitimate telemarketing calls but <strong>does not stop most robocalls</strong>. Legitimate businesses respect the registry — charities, political organizations, and survey companies are exempt. But scammers and illegal robocallers ignore it entirely. Registering at donotcall.gov is still worth doing because it eliminates one category of unwanted calls, but it should be combined with your phone's built-in spam filter and your carrier's blocking service for meaningful protection.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Why am I getting so many robocalls on my cell phone?</div>
+          <div class="qa-answer">Cell phone numbers end up on robocall lists through several channels: data breaches, online forms, sweepstakes entries, public records, and purchased marketing lists. Once your number is on one list it gets sold to others, which is why robocalls tend to increase over time. The good news is that your phone already has tools to fight back — your carrier's spam blocking service and your phone's built-in filter are both free and significantly reduce the volume. Seniors are targeted more heavily than average because scammers specifically target older adults.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Is there a free app to stop robocalls?</div>
+          <div class="qa-answer">Before downloading any app, check what you already have for free. Your phone's built-in spam filter (Silence Unknown Callers on iPhone, Filter Spam Calls on Android) costs nothing and works well. Your carrier's blocking service is also free — AT&T Call Protect, Verizon Call Filter, and T-Mobile Scam Shield all provide meaningful protection at no charge. If you've used both and still want more, <strong>Hiya</strong> and <strong>YouMail</strong> both offer free tiers with additional robocall blocking. Avoid apps that charge monthly fees — the free options are usually sufficient.</div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h4>📋 In This Guide</h4>
+      <ul class="toc-list">
+        <li><a href="#iphone"><div class="toc-num">1</div> Silence Unknown Callers (iPhone)</a></li>
+        <li><a href="#android"><div class="toc-num">2</div> Filter Spam Calls (Android)</a></li>
+        <li><a href="#carrier"><div class="toc-num">3</div> Free carrier tools</a></li>
+        <li><a href="#donotcall"><div class="toc-num">4</div> Do Not Call Registry</a></li>
+        <li><a href="#scams"><div class="toc-num">5</div> Scams to recognize</a></li>
+        <li><a href="#apps"><div class="toc-num">6</div> Paid apps — worth it?</a></li>
+        <li><a href="#faq"><div class="toc-num">7</div> FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-steps-card">
+      <h4>✅ Quick Checklist</h4>
+      <div class="qs-item"><span class="qs-check">✓</span> Silence Unknown Callers ON (iPhone)</div>
+      <div class="qs-item"><span class="qs-check">✓</span> Filter Spam Calls ON (Android)</div>
+      <div class="qs-item"><span class="qs-check">✓</span> Called carrier for free blocking</div>
+      <div class="qs-item"><span class="qs-check">✓</span> Registered at donotcall.gov</div>
+      <div class="qs-item"><span class="qs-check">✓</span> Never press 1 to "opt out"</div>
+      <div class="qs-item"><span class="qs-check">✓</span> Never give info to unknown callers</div>
+    </div>
+
+        <div class="sidebar-card">
+      <h4>🗂 Browse by Topic</h4>
+      <ul class="toc-list">
+        <li><a href="article2-best-ipad-for-seniors.html"><div class="toc-num">📱</div> Best iPad for Seniors</a></li>
+        <li><a href="article3-phones-biggest-text.html"><div class="toc-num">📞</div> Best Phones for Seniors</a></li>
+        <li><a href="article17-best-iphone-for-seniors.html"><div class="toc-num">🍎</div> Best iPhone for Seniors</a></li>
+        <li><a href="article6-best-wifi-routers.html"><div class="toc-num">📶</div> Best Wi-Fi Routers</a></li>
+        <li><a href="article8-medical-alert-watches.html"><div class="toc-num">⌚</div> Medical Alert Watches</a></li>
+        <li><a href="article7-tech-scams-seniors.html"><div class="toc-num">🛡️</div> How to Avoid Tech Scams</a></li>
+        <li><a href="article10-best-tech-gifts-seniors.html"><div class="toc-num">🎁</div> Best Tech Gifts for Seniors</a></li>
+        <li><a href="article19-snowbird-tech-setup-arrival.html"><div class="toc-num">🌴</div> Snowbird Tech Setup Guide</a></li>
+        <li><a href="article20-best-laptop-for-seniors.html"><div class="toc-num">💻</div> Best Laptops for Seniors</a></li>
+      </ul>
+    </div>
+  
+
+  </aside>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Tech<span>Ease</span> Reviews</div>
+    <p style="font-size:13px; color:rgba(255,255,255,0.45); margin-top:6px;">Honest technology guides for seniors · Venice, Florida</p>
+    <p class="footer-copy">© 2026 TechEase Reviews · All advice is independent and free</p>
+  </div>
+</footer>
+
+</body>
+</html>
