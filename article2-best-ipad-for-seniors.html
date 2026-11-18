@@ -12,6 +12,8 @@
 <style>
 
 :root {
+  --purple: #4a2d7a;
+  --teal: #1a5a5a;
   --forest: #1d3a2a;
   --sage: #4a7c5f;
   --mint: #7ec8a0;
@@ -520,6 +522,56 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
 .qa-q-icon { color: var(--sage); font-size: 18px; flex-shrink: 0; }
 .qa-answer { padding: 16px 20px; background: white; font-size: 14.5px; color: #2e3e32; line-height: 1.8; }
 .qa-answer strong { color: var(--forest); }
+
+/* moved from merged iPad guide: age */
+/* AGE CARDS */
+.age-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.age-card { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.age-header { padding: 16px 18px; text-align: center; }
+.age-header.a70 { background: linear-gradient(135deg, #1e3a6e, #2a5090); }
+.age-header.a75 { background: linear-gradient(135deg, #1d3a2a, #2d5040); }
+.age-header.a80 { background: linear-gradient(135deg, #4a2d7a, #6a4d9a); }
+.age-num { font-family: 'Lora', Georgia, serif; font-size: 36px; color: white; font-weight: 700; line-height: 1; }
+.age-label { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 4px; }
+.age-body { padding: 16px 18px; }
+.age-pick { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 6px; }
+.age-reason { font-size: 13px; color: #3a4e3e; line-height: 1.6; }
+@media (max-width: 768px) {
+  .age-grid { grid-template-columns: 1fr; }
+}
+/* moved from merged iPad guide: access */
+/* ACCESSIBILITY SECTION */
+.accessibility-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+.access-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; border-top: 3px solid var(--purple); }
+.access-icon { font-size: 22px; margin-bottom: 8px; }
+.access-title { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 5px; }
+.access-desc { font-size: 13px; color: #3a4e3e; line-height: 1.6; }
+.access-path { display: inline-block; background: var(--warm); border: 1px solid var(--border); border-radius: 5px; padding: 2px 8px; font-size: 11px; font-family: monospace; color: var(--purple); margin-top: 6px; }
+@media (max-width: 768px) {
+  .accessibility-grid { grid-template-columns: 1fr; }
+}
+/* moved from merged iPad guide: gift */
+/* SETUP STEPS */
+.setup-section { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin: 28px 0; }
+.setup-header { background: linear-gradient(135deg, var(--forest), #2d5040); padding: 18px 24px; display: flex; align-items: center; gap: 14px; }
+.setup-header h3 { font-family: 'Lora', Georgia, serif; font-size: 18px; color: white; margin: 0; }
+.setup-header p { font-size: 12px; color: rgba(255,255,255,0.6); margin: 3px 0 0; }
+.setup-body { padding: 24px; background: white; }
+.steps { display: flex; flex-direction: column; gap: 10px; }
+.step { display: grid; grid-template-columns: 36px 1fr; gap: 14px; align-items: start; padding: 12px 14px; border-radius: 9px; background: var(--warm); }
+.step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--sage); display: flex; align-items: center; justify-content: center; font-family: 'Lora', Georgia, serif; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0; }
+.step-title { font-weight: 700; font-size: 14px; color: var(--forest); margin-bottom: 3px; }
+.step-desc { font-size: 13.5px; color: #3a4e3e; line-height: 1.6; }
+.step-path { display: inline-block; background: white; border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; font-size: 12px; font-family: monospace; color: var(--teal); margin-top: 5px; }
+/* GIFT CHECKLIST */
+.gift-checklist { background: linear-gradient(135deg, #1a3a5a, #1a5a5a); border-radius: 14px; padding: 28px 32px; margin: 28px 0; }
+.gc-title { font-family: 'Lora', Georgia, serif; font-size: 20px; color: white; margin-bottom: 6px; }
+.gc-sub { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
+.gc-items { display: flex; flex-direction: column; gap: 10px; }
+.gc-item { display: flex; align-items: flex-start; gap: 12px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: 9px; padding: 12px 16px; }
+.gc-check { width: 22px; height: 22px; border: 2px solid rgba(255,255,255,0.3); border-radius: 5px; flex-shrink: 0; margin-top: 1px; }
+.gc-text strong { display: block; font-size: 14px; color: white; margin-bottom: 2px; }
+.gc-text span { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
 </style>
 </head>
 <body>
@@ -641,6 +693,42 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
       </div>
 
       <!-- PRODUCT 1 -->
+      <h2 id="byage">iPad Recommendation by Age</h2>
+
+      <div class="age-grid">
+        <div class="age-card">
+          <div class="age-header a70">
+            <div class="age-num">70s</div>
+            <div class="age-label">Ages 70–74</div>
+          </div>
+          <div class="age-body">
+            <div class="age-pick">iPad 11th Generation</div>
+            <div class="age-reason">Most people in their early 70s can use the standard 10.9" iPad comfortably with adjusted accessibility settings. Vision and dexterity are usually still sufficient for the standard size.</div>
+          </div>
+        </div>
+        <div class="age-card">
+          <div class="age-header a75">
+            <div class="age-num">75s</div>
+            <div class="age-label">Ages 75–79</div>
+          </div>
+          <div class="age-body">
+            <div class="age-pick">iPad 11th Gen or Air 13"</div>
+            <div class="age-reason">At 75, consider whether vision has changed. If any difficulty reading small text — upgrade to the iPad Air 13". If vision is still sharp, the standard iPad is fine.</div>
+          </div>
+        </div>
+        <div class="age-card">
+          <div class="age-header a80">
+            <div class="age-num">80s</div>
+            <div class="age-label">Ages 80+</div>
+          </div>
+          <div class="age-body">
+            <div class="age-pick">iPad Air 13"</div>
+            <div class="age-reason">At 80+, the larger screen makes a meaningful difference in daily comfort. FaceTime faces are easier to see, text is physically larger, and buttons are easier to tap accurately.</div>
+          </div>
+        </div>
+      </div>
+
+
       <h2 id="ipad11">🥇 #1 Pick: iPad (11th Generation)</h2>
 
       <div class="product-card">
@@ -846,6 +934,170 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
         </div>
       </div>
 
+      <h3 id="ipadair13">Vision challenges? Choose the 13-inch iPad Air</h3>
+      <p>For elderly people with significant vision challenges — macular degeneration, cataracts, or general age-related vision decline — the iPad Air 13" is worth the extra cost. The screen is genuinely, noticeably larger than the standard iPad. FaceTime calls look different on a 13" screen: you can see the person's face clearly, read their expressions, and feel genuinely connected rather than squinting at a small image.</p>
+      <p>Text at the same size setting is physically larger. Apps are easier to navigate. The difference matters more than the spec sheet suggests — I've seen elderly clients immediately relax when switching from a standard iPad to the 13" Air. If vision is a concern, this is the one to get.</p>
+      <div class="pc-cta" style="margin:16px 0 28px;">
+        <div>
+          <div class="pc-price">~$799</div>
+          <div class="pc-price-sub">13" Wi-Fi · 128GB</div>
+        </div>
+        <a href="https://www.amazon.com/dp/B0CTFKXWLW?tag=techeaserev03-20" target="_blank" rel="noopener" class="pc-btn">See the 13" on Amazon →</a>
+      </div>
+
+      <h2 id="accessibility">Essential Accessibility Settings to Enable First</h2>
+      <p>Choosing the right iPad is step one. Setting it up correctly for an elderly user is equally important. These are the first four settings I enable on every iPad I set up for an elderly client.</p>
+
+      <div class="accessibility-grid">
+        <div class="access-card">
+          <div class="access-icon">🔤</div>
+          <div class="access-title">Larger Text Size</div>
+          <div class="access-desc">Makes all text throughout the iPad larger — apps, email, web pages. Most elderly users benefit from going 2-3 steps above the default.</div>
+          <div class="access-path">Settings → Accessibility → Display & Text Size → Larger Text</div>
+        </div>
+        <div class="access-card">
+          <div class="access-icon">🔍</div>
+          <div class="access-title">Display Zoom</div>
+          <div class="access-desc">Makes everything on screen larger — icons, buttons, everything. Ideal for elderly users who find the standard layout too small.</div>
+          <div class="access-path">Settings → Display & Brightness → Display Zoom → Larger Text</div>
+        </div>
+        <div class="access-card">
+          <div class="access-icon">🔊</div>
+          <div class="access-title">Increase Volume Limit</div>
+          <div class="access-desc">Removes the volume cap so FaceTime calls and videos can be heard clearly — important for elderly users with hearing loss.</div>
+          <div class="access-path">Settings → Sounds → Headphone Safety → off</div>
+        </div>
+        <div class="access-card">
+          <div class="access-icon">👆</div>
+          <div class="access-title">AssistiveTouch</div>
+          <div class="access-desc">Adds an on-screen button for elderly users with arthritis or dexterity challenges — reduces the need to press physical buttons.</div>
+          <div class="access-path">Settings → Accessibility → Touch → AssistiveTouch → On</div>
+        </div>
+      </div>
+
+      <p><strong>Additional settings for 75+ and 80+:</strong> AssistiveTouch → ON (Settings → Accessibility → Touch → AssistiveTouch) — adds an on-screen button that reduces the need to press physical buttons, helpful for arthritis. Increase volume limit → Settings → Sounds → Headphone Safety → off. Bold Text → ON (Settings → Accessibility → Display & Text Size → Bold Text).</p>
+
+      <p><strong>For 80+ or significant vision challenges:</strong> Zoom feature → ON (Settings → Accessibility → Zoom) — allows pinching to zoom into any part of the screen. Larger text size → maximum comfortable setting. Consider the iPad Air 13" if not already using it.</p>
+
+      <div class="tip-box">
+        <div class="tip-label">💡 Most Important Setting</div>
+        <p>After setting text size and Display Zoom, go to Settings → FaceTime and make sure FaceTime is turned on and signed in with the Apple ID. Then do a test FaceTime call with a family member before leaving the elderly person on their own. If FaceTime works, 80% of why they wanted the iPad works.</p>
+      </div>
+
+
+      <h2 id="setup">How to Set It Up Before You Give It</h2>
+      <p>This is the most important section in this article. An iPad set up correctly before gifting is used and loved. An iPad handed over in the box is often confusing, frustrating, and ends up unused. Take 30 minutes to do this first.</p>
+
+      <div class="setup-section">
+        <div class="setup-header">
+          <div style="font-size:28px;">⚙️</div>
+          <div>
+            <h3>Pre-Gift Setup Checklist</h3>
+            <p>Do these 8 things before handing the iPad to your grandparent</p>
+          </div>
+        </div>
+        <div class="setup-body">
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <div class="step-title">Create or sign in with an Apple ID</div>
+                <div class="step-desc">The grandparent needs an Apple ID to use FaceTime, iCloud, and the App Store. Create one for them at appleid.apple.com using their email address. Write down the email and password somewhere safe.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <div class="step-title">Enable larger text size</div>
+                <div class="step-desc">Makes all text throughout the iPad larger — apps, email, everything. Go 2-3 steps above the default for most grandparents.</div>
+                <div class="step-path">Settings → Accessibility → Display & Text Size → Larger Text</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <div class="step-title">Enable Display Zoom</div>
+                <div class="step-desc">Makes everything on screen larger — icons, buttons, the whole interface. The single most impactful setting for grandparent usability.</div>
+                <div class="step-path">Settings → Display & Brightness → Display Zoom → Larger Text</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div>
+                <div class="step-title">Set up Touch ID</div>
+                <div class="step-desc">Register the grandparent's fingerprint so they never need to enter a passcode. Try their index finger and thumb — whichever is easier for them.</div>
+                <div class="step-path">Settings → Touch ID & Passcode → Add a Fingerprint</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">5</div>
+              <div>
+                <div class="step-title">Set up FaceTime and do a test call</div>
+                <div class="step-desc">Make sure FaceTime is signed in and working. Then call them from your phone while you're still together — walk them through answering it once before you leave.</div>
+                <div class="step-path">Settings → FaceTime → toggle ON → sign in</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">6</div>
+              <div>
+                <div class="step-title">Add family contacts with photos</div>
+                <div class="step-desc">Add every family member as a contact with their photo. When someone calls, grandma sees a face — not a phone number. Makes answering FaceTime calls much more confident.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">7</div>
+              <div>
+                <div class="step-title">Install the apps they'll actually use</div>
+                <div class="step-desc">Netflix, Hulu, or Prime Video if they stream. Kindle if they read. Weather app. Nothing else. A cluttered home screen is confusing — keep it to 6-8 apps maximum.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">8</div>
+              <div>
+                <div class="step-title">Put it in a case and add a stand</div>
+                <div class="step-desc">A good case prevents screen damage from drops. A stand lets them use the iPad hands-free on a table — much easier for FaceTime and streaming without having to hold it.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-label">💡 Most Important Tip</div>
+        <p>Write down the Apple ID email and password on a piece of paper and tape it inside a kitchen cupboard — somewhere safe and findable. This one step prevents the most common "my iPad is locked and I can't get in" call I receive from grandparents.</p>
+      </div>
+
+      <h2 id="giftchecklist">Complete Gift Checklist</h2>
+      <p>If you're giving this as a gift, here's everything to include alongside the iPad:</p>
+
+      <div class="gift-checklist">
+        <div class="gc-title">🎁 The Complete iPad Gift Package</div>
+        <div class="gc-sub">Everything that makes an iPad gift actually successful</div>
+        <div class="gc-items">
+          <div class="gc-item">
+            <div class="gc-check"></div>
+            <div class="gc-text"><strong>iPad (already set up)</strong><span>Don't give it in the box. Set it up first with Apple ID, FaceTime, larger text, and their apps.</span></div>
+          </div>
+          <div class="gc-item">
+            <div class="gc-check"></div>
+            <div class="gc-text"><strong>A protective case</strong><span>Silicone or folio case. Prevents screen cracks from drops — which happen to grandparents more than you'd think.</span></div>
+          </div>
+          <div class="gc-item">
+            <div class="gc-check"></div>
+            <div class="gc-text"><strong>A tablet stand</strong><span>Lets them use it hands-free on the table. Game-changer for FaceTime calls and streaming.</span></div>
+          </div>
+          <div class="gc-item">
+            <div class="gc-check"></div>
+            <div class="gc-text"><strong>Apple ID written down</strong><span>Email and password on paper, stored somewhere safe. Prevents lockout panic.</span></div>
+          </div>
+          <div class="gc-item">
+            <div class="gc-check"></div>
+            <div class="gc-text"><strong>A short handwritten note</strong><span>"Tap the green button to answer my FaceTime call. Tap the red button to end it." Simple instructions they can refer back to.</span></div>
+          </div>
+        </div>
+      </div>
+
+
       <h2 id="accessories">Essential Accessories to Buy With Your iPad</h2>
       <p>The iPad itself is only part of the setup. These three accessories are worth every penny:</p>
       <p><strong>A case with a built-in stand ($25–$40):</strong> Hands-free video calls, propped up on the counter. Look for the Fintie Folio case on Amazon — it's durable, affordable, and has large text on the button labels.</p>
@@ -903,8 +1155,8 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
 
         <div class="qa-item">
           <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for elderly people?</div>
-          <div class="qa-answer">The <strong>iPad 11th Generation</strong> is the best iPad for elderly people in 2026. For older adults specifically, the most important factors are screen size, ease of use, and reliability — and the 11th Gen delivers on all three. The 10.9" Liquid Retina display is large and bright enough for comfortable reading without straining. The Touch ID fingerprint sensor makes unlocking effortless without needing to remember a passcode. And iOS is consistent and predictable — once an elderly person learns where things are, Apple doesn't move them around the way some Android tablets do. For elderly users with significant vision challenges, the iPad Air 13" is worth considering for its larger screen. See our dedicated guide to the <a href="article14-best-ipad-for-grandparents.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;"><span style="color:var(--sage);">→</span> Best iPad for Grandparents — simple setup guide for gifting</a>
-          <a href="article13-best-ipad-for-elderly.html" style="color:var(--sage);font-weight:600;">best iPad for elderly people</a> for more detail.</div>
+          <div class="qa-answer">The <strong>iPad 11th Generation</strong> is the best iPad for elderly people in 2026. For older adults specifically, the most important factors are screen size, ease of use, and reliability — and the 11th Gen delivers on all three. The 10.9" Liquid Retina display is large and bright enough for comfortable reading without straining. The Touch ID fingerprint sensor makes unlocking effortless without needing to remember a passcode. And iOS is consistent and predictable — once an elderly person learns where things are, Apple doesn't move them around the way some Android tablets do. For elderly users with significant vision challenges, the iPad Air 13" is worth considering for its larger screen. See our dedicated guide to the <a href="#setup" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;"><span style="color:var(--sage);">→</span> Best iPad for Grandparents — simple setup guide for gifting</a>
+          <a href="#ipadair13" style="color:var(--sage);font-weight:600;">best iPad for elderly people</a> for more detail.</div>
         </div>
 
         <div class="qa-item">
@@ -945,12 +1197,12 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
 
         <div class="qa-item">
           <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for an elderly person?</div>
-          <div class="qa-answer">For an elderly person, the <strong>iPad 11th Generation</strong> is the best choice for most situations. The key features that matter for elderly users: Touch ID fingerprint unlock (no passcode to forget), a large 10.9" display, FaceTime for video calls with family, and iOS accessibility features including larger text and Display Zoom. Enable Display Zoom and set text size 2-3 steps above default before handing it to an elderly person — these two settings transform the experience. For elderly people with arthritis or dexterity challenges, AssistiveTouch adds an on-screen button that reduces the need to press physical buttons. See our dedicated guide to the <a href="article13-best-ipad-for-elderly.html" style="color:var(--sage);font-weight:600;">best iPad for elderly people</a> for more detail.</div>
+          <div class="qa-answer">For an elderly person, the <strong>iPad 11th Generation</strong> is the best choice for most situations. The key features that matter for elderly users: Touch ID fingerprint unlock (no passcode to forget), a large 10.9" display, FaceTime for video calls with family, and iOS accessibility features including larger text and Display Zoom. Enable Display Zoom and set text size 2-3 steps above default before handing it to an elderly person — these two settings transform the experience. For elderly people with arthritis or dexterity challenges, AssistiveTouch adds an on-screen button that reduces the need to press physical buttons. See our dedicated guide to the <a href="#ipadair13" style="color:var(--sage);font-weight:600;">best iPad for elderly people</a> for more detail.</div>
         </div>
 
         <div class="qa-item">
           <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for a 70 year old?</div>
-          <div class="qa-answer">For a 70-year-old, the <strong>iPad 11th Generation</strong> is the right choice for most people at this age. Most 70-year-olds have enough vision and dexterity to use the standard 10.9" iPad comfortably with the accessibility settings adjusted — larger text, Display Zoom enabled, and Touch ID configured. If the 70-year-old has existing vision challenges, consider the iPad Air 13" for its larger screen. At 70, software longevity also matters — the iPad 11th Gen is supported through approximately 2030, meaning it won't need replacing for many years. See our full guide to the <a href="article14-best-ipad-for-grandparents.html" style="color:var(--sage);font-weight:600;">best iPad for grandparents</a> for age-specific recommendations.</div>
+          <div class="qa-answer">For a 70-year-old, the <strong>iPad 11th Generation</strong> is the right choice for most people at this age. Most 70-year-olds have enough vision and dexterity to use the standard 10.9" iPad comfortably with the accessibility settings adjusted — larger text, Display Zoom enabled, and Touch ID configured. If the 70-year-old has existing vision challenges, consider the iPad Air 13" for its larger screen. At 70, software longevity also matters — the iPad 11th Gen is supported through approximately 2030, meaning it won't need replacing for many years. See our full guide to the <a href="#setup" style="color:var(--sage);font-weight:600;">best iPad for grandparents</a> for age-specific recommendations.</div>
         </div>
 
         <div class="qa-item">
@@ -967,20 +1219,65 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
           <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for elderly parents?</div>
           <div class="qa-answer">For elderly parents, the <strong>iPad 11th Generation</strong> is the right choice for most families. When buying for an elderly parent specifically, the most important step is setting it up yourself before giving it to them — configure larger text, Display Zoom, FaceTime, and their contacts with photos. An elderly parent handed a configured iPad has a completely different experience from one handed a box. For elderly parents with vision challenges, the iPad Air 13" provides a significantly larger screen. For elderly parents who are skeptical about technology, show them one specific thing they'll love — FaceTime with grandkids, their favorite show on Netflix — before leaving them on their own with it.</div>
         </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for an 80 year old?</div>
+          <div class="qa-answer">For an 80-year-old, I recommend the <strong>iPad 11th Generation</strong> for most people and the <strong>iPad Air 13"</strong> for anyone with vision challenges. At 80, the factors that matter most are screen size (bigger is better), ease of use (iOS is consistent and learnable), and longevity (you don't want to replace it in 2 years). The 11th Gen delivers on all three. Set it up with Display Zoom enabled and text size at least 2-3 steps above default, and an 80-year-old can be comfortable using it within a week.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for a 90 year old?</div>
+          <div class="qa-answer">For a 90-year-old, I lean toward the <strong>iPad Air 13"</strong> more often than the standard iPad. At 90, vision and dexterity are more likely to be concerns, and the larger screen addresses both — larger text, larger buttons, larger FaceTime faces. The weight (1.36 lbs) is manageable for most 90-year-olds using it on a table or stand. I'd also strongly recommend a good iPad stand so it doesn't need to be held, and a simple protective case. Setup should be done by someone who can configure accessibility settings correctly from the start.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Is an iPad good for elderly people with arthritis?</div>
+          <div class="qa-answer">Yes — with the right settings. The iPad's touchscreen is generally easier for elderly people with arthritis than a laptop keyboard or mouse. Key settings to enable: <strong>AssistiveTouch</strong> (adds an on-screen button that reduces the need to press physical buttons), <strong>Touch Accommodations</strong> (makes the screen more forgiving of accidental touches), and <strong>larger text size</strong> (bigger targets are easier to tap accurately). A stylus can also help elderly users with arthritis tap more precisely. The iPad Air 13" is particularly good for arthritis sufferers because the larger targets are easier to hit.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> iPad for elderly — what size screen is best?</div>
+          <div class="qa-answer">For elderly users, <strong>bigger is almost always better</strong>. The minimum I'd recommend for an elderly person is the 10.9" standard iPad. If there are any vision challenges at all, go to the 13" iPad Air — the difference in daily comfort is significant. Avoid the iPad Mini (8.3") for elderly users; the screen is simply too small for comfortable use. The 13" screen means text is physically larger at the same font setting, FaceTime faces are easier to see, and buttons are easier to tap accurately.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for a 75 year old?</div>
+          <div class="qa-answer">For a 75-year-old, the recommendation depends on vision. If vision is still sharp, the <strong>iPad 11th Generation</strong> works well. If there are any vision challenges — difficulty reading menus, squinting at screens, mentions of needing reading glasses more frequently — the <strong>iPad Air 13"</strong> is worth the extra cost at 75. The larger screen addresses vision changes directly in a way that accessibility settings can partially but not fully compensate for. At 75, it's also worth thinking about how the device will feel in 3-5 years — buying the larger screen now extends comfortable usability longer.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Is an iPad easy to use for a 70 year old?</div>
+          <div class="qa-answer">Yes — with the right setup. A 70-year-old who receives a properly configured iPad (Display Zoom on, larger text, Touch ID set up, minimal home screen) typically becomes comfortable with the basics within a week. The learning curve is real but manageable, especially when a family member sits with them for 30-60 minutes the first time. The most important factor is that first setup session — an iPad handed over with default settings feels overwhelming. An iPad configured correctly feels intuitive. Most 70-year-olds I work with in the Venice area are using FaceTime, streaming shows, and reading news independently within 2 weeks of a proper setup.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for a 70 year old who has never used one?</div>
+          <div class="qa-answer">For a 70-year-old who is completely new to iPads, the <strong>iPad 11th Generation</strong> is the right starting point — and the setup matters more than the model. Before they touch it for the first time: configure Display Zoom, set larger text, set up Touch ID, install only the apps they'll actually use (FaceTime, Netflix, and maybe one or two others), and do a test FaceTime call together. New-to-iPad 70-year-olds do best when they have one or two specific things to practice first — answering a FaceTime call, opening Netflix — before exploring independently. See our <a href="article15-ipad-basics-seniors.html" style="color:var(--sage);font-weight:600;">iPad basics guide for seniors</a> for a step-by-step beginner introduction.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> Should I get cellular or Wi-Fi iPad for a 70 year old?</div>
+          <div class="qa-answer">For most 70-year-olds, <strong>Wi-Fi only is the right choice</strong>. A Wi-Fi iPad works perfectly at home and anywhere with a Wi-Fi connection — which covers most places seniors spend time. The cellular version costs $130-150 more and requires a monthly data plan (typically $10-20/month). The exception: if the 70-year-old travels frequently and wants to use the iPad on the road without relying on public Wi-Fi, cellular is worth considering. For a grandparent who primarily uses the iPad at home for FaceTime, streaming, and reading — Wi-Fi only is perfectly sufficient and significantly cheaper.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> What is the best iPad for grandparents?</div>
+          <div class="qa-answer">The <strong>iPad 11th Generation</strong> is the best iPad for most grandparents in 2026. It has a large 10.9" display, Apple's simple and consistent iOS interface, Touch ID fingerprint unlock (no passcode to remember), and software support through at least 2030. At $349 it's a meaningful gift that will last years. For grandparents with vision challenges, the iPad Air 13" is worth the extra cost — the larger screen makes a genuine difference in daily comfort.</div>
+        </div>
+
+        <div class="qa-item">
+          <div class="qa-question"><span class="qa-q-icon">Q</span> iPad or Android tablet for grandparents — which is better?</div>
+          <div class="qa-answer">For grandparents, <strong>iPad is the better choice in most situations</strong>. The reasons: iOS is more consistent and predictable than Android (grandparents rely on muscle memory — they don't want the interface to change), Apple provides longer software support (6-7 years vs 2-3 for most Android tablets), and FaceTime is the simplest video calling experience for families who use iPhones. The one exception: if budget is very tight, the Amazon Fire HD 10 at $140 is a reasonable option for grandparents who primarily want to stream shows and read — but it doesn't have FaceTime or Google apps. See our <a href="article12-best-android-tablets-seniors.html" style="color:var(--sage);font-weight:600;">Android tablets guide</a> for a full comparison.</div>
+        </div>
       <div style="background:var(--warm);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin:28px 0;">
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--sage);margin-bottom:12px;">📖 Related Guides</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <a href="article14-best-ipad-for-grandparents.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;"><span style="color:var(--sage);">→</span> Best iPad for Grandparents — simple setup guide for gifting</a>
-          <a href="article13-best-ipad-for-elderly.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;">
-            <span style="color:var(--sage);">→</span> Best iPad for Elderly People in 2026 — dedicated guide for older adults
-          </a>
           <a href="article12-best-android-tablets-seniors.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;">
             <span style="color:var(--sage);">→</span> Best Android Tablets for Seniors — Fire HD, Samsung Galaxy, and more
           </a>
           <a href="article5-best-tablets-for-seniors.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;">
             <span style="color:var(--sage);">→</span> iPad vs Amazon Fire Tablet — which is right for your senior?
           </a>
-          <a href="article16-best-ipad-70-year-old.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;"><span style="color:var(--sage);">→</span> Best iPad for 70, 75, and 80 Year Olds</a>
           <a href="article15-ipad-basics-seniors.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;"><span style="color:var(--sage);">→</span> iPad Basics for Seniors — beginner guide</a>
         </div>
       </div>
@@ -997,9 +1294,6 @@ footer { background: var(--forest); padding: 40px 32px 24px; margin-top: 60px; }
     <div class="sidebar-card">
       <h4>🗂 Browse by Topic</h4>
       <ul class="toc-list">
-        <li><a href="article13-best-ipad-for-elderly.html"><div class="toc-num">🧓</div> Best iPad for Elderly People</a></li>
-        <li><a href="article16-best-ipad-70-year-old.html"><div class="toc-num">🎂</div> Best iPad for 70 Year Olds</a></li>
-        <li><a href="article14-best-ipad-for-grandparents.html"><div class="toc-num">👵</div> Best iPad for Grandparents</a></li>
         <li><a href="article15-ipad-basics-seniors.html"><div class="toc-num">📘</div> iPad Basics for Seniors</a></li>
         <li><a href="article5-best-tablets-for-seniors.html"><div class="toc-num">📲</div> Best Tablets for Seniors</a></li>
         <li><a href="article12-best-android-tablets-seniors.html"><div class="toc-num">🤖</div> Best Android Tablets for Seniors</a></li>
